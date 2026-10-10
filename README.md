@@ -303,7 +303,8 @@ same model family as the enricher, so shared blind spots are possible.
 - **Interruption and resume (full run).** First invocation: Ctrl-C after 80 requests; in-flight requests were
   saved and `checkpoint_before.json` recorded 144,801 completed IDs. Second invocation printed `phase=resume`
   with 469,697 texts pending (475,697 before), re-sent none of the checkpointed IDs, and finished with 660,532
-  completed (`checkpoint_after.json`). The checker's resume checks pass. Screen recording: **LINK TO ADD**.
+  completed (`checkpoint_after.json`). The checker's resume checks pass. Screen recording (2.5 min, viewable without signing in):
+  <https://drive.google.com/file/d/1ilAj8E26yJaXErL0JNIi2c8FOlxrah2g/view?usp=sharing>.
 
 ## Limitations
 
