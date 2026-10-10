@@ -1,0 +1,7 @@
+issue_id,review_id
+access.login,synthetic-control-05
+billing.charges,synthetic-control-03
+catalog.lyrics,synthetic-inject-05
+playback.crash,synthetic-control-01
+playback.stops,synthetic-inject-01
+usability.ads,synthetic-inject-03

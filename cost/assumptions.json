@@ -1,0 +1,47 @@
+{
+  "_comment": "Editable inputs for the full-run projection. Measured pilot results never depend on this file.",
+  "budget_usd": 15.0,
+  "output_token_cap_per_enrich_request": 2000,
+  "max_workers": 24,
+  "max_fallback_fraction": 0.0,
+  "projected": {
+    "rows": 660622,
+    "nonempty_rows": 660609,
+    "empty_text_quarantines": 13,
+    "distinct_nonempty_texts": 484189,
+    "verify_sample_reviews": 2000,
+    "issues_to_name": 22,
+    "memo_calls": 1
+  },
+  "tier_limits": {
+    "requests_per_minute": 5000,
+    "tokens_per_minute": 2000000,
+    "source": "x-ratelimit-limit-* response headers for gpt-6-luna on this account (OpenAI Tier 2), read 2026-10-07"
+  },
+  "scenarios": {
+    "base": {
+      "tier": "standard",
+      "workers": 24,
+      "parallel_efficiency": 0.8,
+      "enrich_retry_fraction": null,
+      "cached_input_fraction": null,
+      "verify_retry_fraction": 0.05,
+      "memo_attempts": 1,
+      "fixed_local_overhead_seconds": 120
+    },
+    "conservative": {
+      "tier": "standard",
+      "workers": 8,
+      "parallel_efficiency": 0.5,
+      "enrich_retry_fraction": 0.15,
+      "cached_input_fraction": 0.0,
+      "verify_retry_fraction": 0.25,
+      "memo_attempts": 2,
+      "fixed_local_overhead_seconds": 300
+    }
+  },
+  "local_compute": {
+    "usd_per_hour": null,
+    "note": "Laptop electricity/hardware cost was not measured: reported as unknown, not zero."
+  }
+}

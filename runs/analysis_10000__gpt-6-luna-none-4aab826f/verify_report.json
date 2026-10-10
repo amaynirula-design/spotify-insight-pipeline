@@ -1,0 +1,86 @@
+{
+  "all_three_agree": 0.7835,
+  "compared": 2000,
+  "disagreeing_records": 433,
+  "intent_agreement": 0.9485,
+  "label_config": "gpt-6-luna@none|enrich_p2|schema-s1|4aab826f",
+  "most_common_disagreements": [
+    [
+      "severity: enricher=2 verifier=3",
+      53
+    ],
+    [
+      "topic: enricher=billing verifier=usability",
+      37
+    ],
+    [
+      "topic: enricher=other verifier=catalog",
+      32
+    ],
+    [
+      "topic: enricher=catalog verifier=usability",
+      26
+    ],
+    [
+      "topic: enricher=usability verifier=other",
+      25
+    ],
+    [
+      "severity: enricher=4 verifier=3",
+      22
+    ],
+    [
+      "intent: enricher=cancellation verifier=complaint",
+      20
+    ],
+    [
+      "topic: enricher=other verifier=usability",
+      19
+    ],
+    [
+      "severity: enricher=2 verifier=1",
+      18
+    ],
+    [
+      "topic: enricher=usability verifier=playback",
+      17
+    ],
+    [
+      "severity: enricher=3 verifier=4",
+      17
+    ],
+    [
+      "severity: enricher=1 verifier=2",
+      17
+    ],
+    [
+      "topic: enricher=other verifier=playback",
+      16
+    ],
+    [
+      "intent: enricher=praise verifier=unclear",
+      14
+    ],
+    [
+      "intent: enricher=unclear verifier=praise",
+      13
+    ]
+  ],
+  "needs_review_flag_also_disagreed": 83,
+  "needs_review_flagged_in_sample": 275,
+  "note": "Verifier labels are a second opinion from a model, not ground truth; they never overwrite enrichment labels.",
+  "sample_rule": {
+    "fraction": 0.2,
+    "max": 2000,
+    "min": 20,
+    "seed": "verify-sample-v1"
+  },
+  "sample_size": 2000,
+  "severity_exact_agreement": 0.9195,
+  "severity_mean_abs_difference": 0.0905,
+  "stage": "verify",
+  "topic_agreement": 0.8675,
+  "verifier_answers": 2000,
+  "verifier_unanswered": 0,
+  "verify_config": "gpt-6-luna@low|verify_v1|schema-s1|a240da73"
+}

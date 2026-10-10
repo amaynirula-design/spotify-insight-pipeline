@@ -1,0 +1,9 @@
+topic,issues,complaint_count,severity_sum,mean_severity
+usability,3,79218,188811,2.383436
+billing,3,63513,183371,2.887141
+other,3,83060,164931,1.985685
+playback,5,36355,119001,3.273305
+catalog,4,20737,59208,2.855186
+access,2,10156,39989,3.937475
+downloads,1,5828,20022,3.435484
+support,1,461,1159,2.514100

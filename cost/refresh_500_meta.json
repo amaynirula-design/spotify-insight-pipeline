@@ -1,0 +1,25 @@
+{
+  "source_run_dir": "checkpoint_500__gpt-6-luna-none-4aab826f",
+  "input_file": "checkpoint_500.csv",
+  "input_sha256": "a94e31663ee7b7eaa77e23b7a8425b530cc0c866ed5e714953172a0afef6a12f",
+  "stage_times_excluded_from_projection": {
+    "group": {
+      "measured_wall_seconds": 5951.641,
+      "reason": "the laptop slept for about 97 minutes during this stage (two requests timed out and were retried); the wall-clock is not a throughput measurement"
+    }
+  },
+  "rows": 500,
+  "distinct_texts": 479,
+  "workers": 2,
+  "stage_wall_seconds": {
+    "ingest": 0.002,
+    "enrich": 39.007,
+    "verify": 45.488,
+    "group": null,
+    "rank": 0.01,
+    "memo": 12.737,
+    "export": 4.717
+  },
+  "label_config": "gpt-6-luna@none|enrich_p2|schema-s1|4aab826f",
+  "note": "Enrichment timing covers the invocations logged in this run folder; texts already cached from an earlier checkpoint were not re-sent."
+}

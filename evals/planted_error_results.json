@@ -1,0 +1,222 @@
+{
+  "synthetic_test_copy": true,
+  "source_run": "spotify_reviews_18months__gpt-6-luna-none-4aab826f",
+  "records_in_test_copy": 1579,
+  "planted": [
+    {
+      "review_id": "871e9e37-279b-4599-84bb-1fed7dfb6075",
+      "field": "topic",
+      "original": "playback",
+      "planted_wrong_value": "billing",
+      "detected": true
+    },
+    {
+      "review_id": "988f8bcd-1005-4353-9755-152a64a3a432",
+      "field": "severity",
+      "original": 1,
+      "planted_wrong_value": 5,
+      "detected": true
+    },
+    {
+      "review_id": "03a72790-7c2f-4183-ba40-d580dd2baf21",
+      "field": "intent",
+      "original": "praise",
+      "planted_wrong_value": "complaint",
+      "detected": true
+    },
+    {
+      "review_id": "b545b794-a38b-4d99-af67-5a34c1b5c8e5",
+      "field": "topic",
+      "original": "other",
+      "planted_wrong_value": "playback",
+      "detected": true
+    },
+    {
+      "review_id": "9e5c30a8-0eef-447d-abf0-51b65029d56d",
+      "field": "severity",
+      "original": 1,
+      "planted_wrong_value": 5,
+      "detected": true
+    },
+    {
+      "review_id": "1011703d-7ad3-4d05-adc4-73536f43e6fc",
+      "field": "intent",
+      "original": "praise",
+      "planted_wrong_value": "complaint",
+      "detected": true
+    },
+    {
+      "review_id": "abcec16f-f561-4abe-a33e-92a36ab926b0",
+      "field": "topic",
+      "original": "other",
+      "planted_wrong_value": "playback",
+      "detected": true
+    },
+    {
+      "review_id": "076625d2-cd89-4877-a8f1-b04e4ea3c617",
+      "field": "severity",
+      "original": 2,
+      "planted_wrong_value": 5,
+      "detected": true
+    },
+    {
+      "review_id": "c656ae24-31c8-4786-86b2-91174fa40852",
+      "field": "intent",
+      "original": "praise",
+      "planted_wrong_value": "complaint",
+      "detected": true
+    },
+    {
+      "review_id": "ea2ea067-9db9-4863-b86e-37ac364cf79d",
+      "field": "topic",
+      "original": "other",
+      "planted_wrong_value": "playback",
+      "detected": true
+    },
+    {
+      "review_id": "a93f6ab9-fdec-4d9f-a7d2-d7be9b260f89",
+      "field": "severity",
+      "original": 1,
+      "planted_wrong_value": 5,
+      "detected": true
+    },
+    {
+      "review_id": "43f3d763-69e8-4da0-b824-e3c3ab529d8b",
+      "field": "intent",
+      "original": "praise",
+      "planted_wrong_value": "complaint",
+      "detected": true
+    },
+    {
+      "review_id": "805000ff-c7dd-423d-a106-ca2d26cf54b2",
+      "field": "topic",
+      "original": "other",
+      "planted_wrong_value": "playback",
+      "detected": true
+    },
+    {
+      "review_id": "6d59c506-148c-4547-83f0-10dbc88698c7",
+      "field": "severity",
+      "original": 3,
+      "planted_wrong_value": 1,
+      "detected": true
+    },
+    {
+      "review_id": "f45cc3a7-fbfe-4715-9b91-9d5225b7306f",
+      "field": "intent",
+      "original": "praise",
+      "planted_wrong_value": "complaint",
+      "detected": true
+    },
+    {
+      "review_id": "d6b30f8a-c1f5-45ee-bc47-1909f73f237f",
+      "field": "topic",
+      "original": "other",
+      "planted_wrong_value": "playback",
+      "detected": true
+    },
+    {
+      "review_id": "08b8526f-a74b-4321-b251-236dd8fd6e29",
+      "field": "severity",
+      "original": 1,
+      "planted_wrong_value": 5,
+      "detected": true
+    },
+    {
+      "review_id": "1dd0a6b9-63f6-4e8e-8852-fd4b7c74f28f",
+      "field": "intent",
+      "original": "complaint",
+      "planted_wrong_value": "praise",
+      "detected": true
+    },
+    {
+      "review_id": "49370dfa-1a48-465f-bfd6-e91695a48b1c",
+      "field": "topic",
+      "original": "usability",
+      "planted_wrong_value": "catalog",
+      "detected": true
+    },
+    {
+      "review_id": "d77d3796-2b68-4f54-8862-9cb37213ddea",
+      "field": "severity",
+      "original": 3,
+      "planted_wrong_value": 1,
+      "detected": true
+    },
+    {
+      "review_id": "bdbee801-89c0-441a-ac90-170f0164dd85",
+      "field": "intent",
+      "original": "complaint",
+      "planted_wrong_value": "praise",
+      "detected": true
+    },
+    {
+      "review_id": "e822d287-d1a8-41b6-ae14-090538f1ed21",
+      "field": "topic",
+      "original": "other",
+      "planted_wrong_value": "playback",
+      "detected": true
+    },
+    {
+      "review_id": "45aed4a6-76b8-48e7-b454-758d3b624794",
+      "field": "severity",
+      "original": 1,
+      "planted_wrong_value": 5,
+      "detected": true
+    },
+    {
+      "review_id": "ff397fa5-fdde-4a19-85bf-2731480038b6",
+      "field": "intent",
+      "original": "praise",
+      "planted_wrong_value": "complaint",
+      "detected": true
+    },
+    {
+      "review_id": "926f57f7-32bb-40d9-81e2-bcf90901c450",
+      "field": "topic",
+      "original": "downloads",
+      "planted_wrong_value": "support",
+      "detected": true
+    },
+    {
+      "review_id": "fe4b5285-d734-4d43-9097-ff06f309c39e",
+      "field": "severity",
+      "original": 4,
+      "planted_wrong_value": 1,
+      "detected": true
+    },
+    {
+      "review_id": "e01b6420-8ea2-4439-be6d-21416e70109d",
+      "field": "intent",
+      "original": "praise",
+      "planted_wrong_value": "complaint",
+      "detected": true
+    },
+    {
+      "review_id": "d60da44b-1ad6-40ec-bd26-5615b2dd3c13",
+      "field": "topic",
+      "original": "access",
+      "planted_wrong_value": "downloads",
+      "detected": true
+    },
+    {
+      "review_id": "a5dcf03f-58c0-4032-bffc-565802036752",
+      "field": "severity",
+      "original": 3,
+      "planted_wrong_value": 1,
+      "detected": true
+    },
+    {
+      "review_id": "89ce90b0-e87a-474d-9084-be9268d392d0",
+      "field": "intent",
+      "original": "praise",
+      "planted_wrong_value": "complaint",
+      "detected": true
+    }
+  ],
+  "planted_detected": 30,
+  "planted_total": 30,
+  "false_alarms_on_untouched_records": [],
+  "passed": true,
+  "note": "Detection relies on the verifier's independent label; an error the verifier would also make cannot be caught this way."
+}

@@ -1,0 +1,10 @@
+review_id,fields,enricher_topic,verifier_topic,enricher_intent,verifier_intent,enricher_severity,verifier_severity,enricher_code,review_text
+23de7958-ccb0-4356-bc12-094935e6857d,topic,catalog,other,praise,praise,1,1,library,I absolutely love Spotify! Best music app there is.
+33526c6f-7a49-4b3d-bd20-d1bc191c494c,intent+severity,other,other,unclear,complaint,1,2,boycott,"RUDE APP , THIS APP SUPPORT GUYS 🤮🤮🤮🤮🤮🤮🤮🤮🤮🤮. تطبيق سيء ، بدعم المثليين 🤮🤮🤮"
+3e8bdc92-4934-457e-85cc-8b9d14bf51c0,severity,usability,usability,complaint,complaint,2,3,ads,"Decent,just let me have a solid 4-5 songs without an ad bro, it's always every 1 or 2 song then instant ads, that's all thanks"
+5bc203df-dac3-41ae-8b8d-ee0e8b9d9f50,topic,catalog,other,praise,praise,1,1,library,Awesome app and music
+9c9757da-6b99-4c95-a0e7-0661ee858027,topic,usability,playback,complaint,complaint,3,3,controls,There is some bugs like music adjustment doesn't work Perporly plz do something about this bug
+a1a28752-3256-4f81-b888-3e943343529f,severity,catalog,catalog,complaint,complaint,2,3,library,It's nice but gospel music isn't much
+cf6166ae-d71a-4839-9add-088645ad3b78,severity,usability,usability,complaint,complaint,2,3,ads,DON'T DOWNLOAD THIS:Such a worst app ... that always plays adds instead of songs ...if want to enjoy music free without adds don't download this app ..
+e5e6c55f-3069-4b7c-9807-f8b5d5bf2726,severity,usability,usability,complaint,complaint,2,3,ads,Too many ads.... it's literally useless if u hv not taken premium
+ed15bb17-865a-492b-ba1b-268f4cab78f6,topic+intent+severity,usability,other,complaint,praise,2,1,ads,Very good app enna advertisement verudu premium best

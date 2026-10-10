@@ -1,0 +1,23 @@
+rank,issue_id,issue_name,topic,complaint_count,cancellation_count,severity_sum,mean_severity,priority_score,needs_review_count,sev1,sev2,sev3,sev4,sev5
+1,billing.paywall,Free-Tier Features Require Premium,billing,55963,10314,162920,2.911209,162920,3103,10,5266,50379,299,9
+2,other.general,General dissatisfaction with Spotify,other,78126,5548,155898,1.995469,155898,13195,641,77295,118,47,25
+3,usability.ads,Frequent and intrusive ads,usability,38542,2421,82446,2.139121,82446,1588,1,33334,5055,148,4
+4,usability.controls,Unreliable Playback and Queue Controls,usability,20265,1746,59994,2.960474,59994,1238,11,1109,18845,270,30
+5,usability.ui,Interface Changes and Hidden Controls,usability,20411,2612,46371,2.271863,46371,3569,17,15060,5109,218,7
+6,playback.stops,Playback Stops or Skips Unexpectedly,playback,13643,1353,44225,3.241589,44225,897,0,47,10278,3293,25
+7,playback.crash,App Crashes or Fails to Open,playback,9275,581,33399,3.600970,33399,1387,0,207,3311,5733,24
+8,access.login,Login and Account Access Problems,access,8187,396,31967,3.904605,31967,427,0,46,822,7186,133
+9,playback.connect,Connection Errors and Cross-Device Playback,playback,7830,704,25518,3.259004,25518,570,1,189,5441,2179,20
+10,catalog.missing,Songs Missing or Unavailable,catalog,7379,511,21277,2.883453,21277,759,4,1275,5750,277,73
+11,downloads.offline,Downloaded Content Disappears or Won’t Play,downloads,5828,288,20022,3.435484,20022,644,2,100,3268,2274,184
+12,catalog.recs,Repetitive or Unwanted Music Recommendations,catalog,6820,532,18232,2.673314,18232,470,9,2256,4510,44,1
+13,catalog.lyrics,"Lyrics Missing, Unavailable, or Incorrect",catalog,5166,179,15325,2.966512,15325,179,0,253,4834,78,1
+14,billing.charges,Premium Payment and Activation Problems,billing,2953,209,11059,3.745005,11059,615,0,141,1253,777,782
+15,playback.perf,Slow Loading and App Performance,playback,3522,259,10418,2.957978,10418,287,0,274,3140,90,18
+16,billing.price,Subscription Cost and Plan Value Concerns,billing,4597,450,9392,2.043072,9392,1135,20,4371,197,6,3
+17,other.boycott,Religious and National Boycott Statements,other,4809,1036,8789,1.827615,8789,363,847,3946,15,0,1
+18,access.account,Account Access and Profile Problems,access,1969,207,8022,4.074149,8022,527,6,134,450,497,882
+19,playback.audio,Poor or Inconsistent Audio Quality,playback,2085,105,5441,2.609592,5441,193,3,837,1218,25,2
+20,catalog.library,Saved Music Missing From Library,catalog,1372,45,4374,3.188047,4374,174,5,330,620,236,181
+21,support.support,Difficult and Unhelpful Customer Support,support,461,51,1159,2.514100,1159,54,0,273,150,27,11
+22,other.noise,Vague and Unclear App Complaints,other,125,16,244,1.952000,244,123,11,110,3,1,0

@@ -1,0 +1,294 @@
+{
+  "api_cost_usd_measured": 0.004438,
+  "api_cost_usd_unresolved_estimate": 0,
+  "calls_by_role": {
+    "enrich": {
+      "attempts": 3,
+      "call_seconds_sum": 15.527465,
+      "cost_usd": 0.001261,
+      "input_cached_tokens": 3376,
+      "input_uncached_tokens": 4085,
+      "output_tokens": 1637,
+      "reasoning_tokens": 0,
+      "retry_attempts": 1,
+      "succeeded": 3,
+      "unresolved_reserved_usd": 0
+    },
+    "group": {
+      "attempts": 14,
+      "call_seconds_sum": 46.020234,
+      "cost_usd": 0.001326,
+      "input_cached_tokens": 0,
+      "input_uncached_tokens": 5928,
+      "output_tokens": 1466,
+      "reasoning_tokens": 794,
+      "retry_attempts": 0,
+      "succeeded": 14,
+      "unresolved_reserved_usd": 0
+    },
+    "memo": {
+      "attempts": 1,
+      "call_seconds_sum": 14.742189,
+      "cost_usd": 0.001372,
+      "input_cached_tokens": 0,
+      "input_uncached_tokens": 6064,
+      "output_tokens": 1531,
+      "reasoning_tokens": 713,
+      "retry_attempts": 0,
+      "succeeded": 1,
+      "unresolved_reserved_usd": 0
+    },
+    "verify": {
+      "attempts": 1,
+      "call_seconds_sum": 7.650816,
+      "cost_usd": 0.00048,
+      "input_cached_tokens": 0,
+      "input_uncached_tokens": 937,
+      "output_tokens": 772,
+      "reasoning_tokens": 582,
+      "retry_attempts": 0,
+      "succeeded": 1,
+      "unresolved_reserved_usd": 0
+    }
+  },
+  "cost_note": "cost_usd = provider-reported usage x cost/rates.csv; calls without usage are listed as unresolved reserved estimates",
+  "counts": {
+    "cache_reuse_rows": 0,
+    "completed": 100,
+    "distinct_texts": 100,
+    "empty_text": 0,
+    "n_rows": 100,
+    "pending": 0,
+    "quarantined_nonempty": 0
+  },
+  "export_status_counts": {
+    "cache_reuse": 0,
+    "completed": 100
+  },
+  "exported_at": "2026-10-07T20:06:50Z",
+  "input_file": "cost_100.csv",
+  "input_sha256": "c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e",
+  "is_complete": true,
+  "label_config": "gpt-6-luna@none|enrich_p2|schema-s1|4aab826f",
+  "limits": {
+    "backoff_base_seconds": 2.0,
+    "budget_usd": 1.0,
+    "invalid_output_retries": 1,
+    "max_consecutive_deferred": 3,
+    "max_fallback_fraction": 0.0,
+    "max_transient_retries": 4,
+    "max_workers": 1,
+    "request_timeout_s": 180,
+    "requests_per_minute": 400,
+    "tokens_per_minute": 400000
+  },
+  "provider": "openai",
+  "run_dir": "pilot_run_warm",
+  "stage_configs": {
+    "enrich": "gpt-6-luna@none|enrich_p2|schema-s1|4aab826f",
+    "group": "gpt-6-luna@low|group_g1|schema-s1|1fbb6d6a",
+    "memo": "gpt-6-luna@medium|memo_m1|schema-s1|09d5f306",
+    "verify": "gpt-6-luna@low|verify_v1|schema-s1|a240da73"
+  },
+  "stage_log": [
+    {
+      "classification_scope": {
+        "distinct_nonempty_texts": 100,
+        "duplicate_text_groups": 0,
+        "nonempty_to_classify": 100,
+        "rows_served_by_exact_text_reuse": 0
+      },
+      "counts": {
+        "duplicate_review_ids": 0,
+        "empty_review_text": 0,
+        "missing_app_version": 18,
+        "records": 100
+      },
+      "finished_at": "2026-10-07T20:06:50Z",
+      "invocation": "20261007T130650-e02ecf",
+      "stage": "ingest",
+      "wall_seconds": 0.001
+    },
+    {
+      "budget_cap_usd": 0.5,
+      "checkpoint_written": null,
+      "counts_after": {
+        "cache_reuse_rows": 0,
+        "completed": 100,
+        "distinct_texts": 100,
+        "empty_text": 0,
+        "n_rows": 100,
+        "pending": 0,
+        "quarantined_nonempty": 0
+      },
+      "counts_before": {
+        "cache_reuse_rows": 0,
+        "completed": 100,
+        "distinct_texts": 100,
+        "empty_text": 0,
+        "n_rows": 100,
+        "pending": 0,
+        "quarantined_nonempty": 0
+      },
+      "events": {},
+      "finished_at": "2026-10-07T20:06:50Z",
+      "first_pass_requests_done": 0,
+      "interrupted_calls_reconciled": 0,
+      "invocation": "20261007T130650-e02ecf",
+      "label_config": "gpt-6-luna@none|enrich_p2|schema-s1|4aab826f",
+      "pending_texts_at_start": 0,
+      "phase": "initial",
+      "requests_planned": 0,
+      "spent_usd_this_invocation": 0.0,
+      "spent_usd_total_ledger": 0.004438,
+      "stage": "enrich",
+      "stop_reason": null,
+      "wall_seconds": 0.0,
+      "workers": 1
+    },
+    {
+      "all_three_agree": 0.8,
+      "compared": 20,
+      "disagreeing_records": 4,
+      "finished_at": "2026-10-07T20:06:50Z",
+      "intent_agreement": 1.0,
+      "invocation": "20261007T130650-e02ecf",
+      "label_config": "gpt-6-luna@none|enrich_p2|schema-s1|4aab826f",
+      "most_common_disagreements": [
+        [
+          "severity: enricher=2 verifier=3",
+          3
+        ],
+        [
+          "topic: enricher=billing verifier=usability",
+          1
+        ]
+      ],
+      "needs_review_flag_also_disagreed": 0,
+      "needs_review_flagged_in_sample": 0,
+      "note": "Verifier labels are a second opinion from a model, not ground truth; they never overwrite enrichment labels.",
+      "sample_rule": {
+        "fraction": 0.2,
+        "max": 2000,
+        "min": 20,
+        "seed": "verify-sample-v1"
+      },
+      "sample_size": 20,
+      "severity_exact_agreement": 0.85,
+      "severity_mean_abs_difference": 0.15,
+      "stage": "verify",
+      "topic_agreement": 0.95,
+      "verifier_answers": 20,
+      "verifier_unanswered": 0,
+      "verify_config": "gpt-6-luna@low|verify_v1|schema-s1|a240da73",
+      "wall_seconds": 0.003
+    },
+    {
+      "fallback_names": 0,
+      "finished_at": "2026-10-07T20:06:50Z",
+      "group_config": "gpt-6-luna@low|group_g1|schema-s1|1fbb6d6a",
+      "invocation": "20261007T130650-e02ecf",
+      "issues": 14,
+      "memberships": 52,
+      "named_now": 0,
+      "stage": "group",
+      "wall_seconds": 0.001
+    },
+    {
+      "finished_at": "2026-10-07T20:06:50Z",
+      "invocation": "20261007T130650-e02ecf",
+      "issues": 14,
+      "memberships": 52,
+      "model_calls": 0,
+      "stage": "rank",
+      "top5": [
+        {
+          "complaint_count": 11,
+          "issue_id": "billing.paywall",
+          "mean_severity": "3.000000",
+          "priority_score": 33,
+          "rank": 1,
+          "severity_sum": 33
+        },
+        {
+          "complaint_count": 8,
+          "issue_id": "other.general",
+          "mean_severity": "2.000000",
+          "priority_score": 16,
+          "rank": 2,
+          "severity_sum": 16
+        },
+        {
+          "complaint_count": 8,
+          "issue_id": "usability.ads",
+          "mean_severity": "2.000000",
+          "priority_score": 16,
+          "rank": 3,
+          "severity_sum": 16
+        },
+        {
+          "complaint_count": 3,
+          "issue_id": "usability.controls",
+          "mean_severity": "3.000000",
+          "priority_score": 9,
+          "rank": 4,
+          "severity_sum": 9
+        },
+        {
+          "complaint_count": 4,
+          "issue_id": "usability.ui",
+          "mean_severity": "2.250000",
+          "priority_score": 9,
+          "rank": 5,
+          "severity_sum": 9
+        }
+      ],
+      "wall_seconds": 0.002
+    },
+    {
+      "attempts": 0,
+      "claims_cited": [
+        "C001",
+        "C003",
+        "C004",
+        "C009",
+        "C012",
+        "C013",
+        "C016",
+        "C021",
+        "C023",
+        "C025",
+        "C027"
+      ],
+      "facts_cited": [
+        "F001",
+        "F002",
+        "F007",
+        "F009",
+        "F010",
+        "F012",
+        "F031",
+        "F032",
+        "F034",
+        "F035",
+        "F072",
+        "F074"
+      ],
+      "finished_at": "2026-10-07T20:06:50Z",
+      "invocation": "20261007T130650-e02ecf",
+      "memo_config": "gpt-6-luna@medium|memo_m1|schema-s1|09d5f306",
+      "problems": [],
+      "reused_saved_draft": true,
+      "reviews_cited": [
+        "9e5f9745-f8be-48d3-b9de-4d118507d94a",
+        "a78d831a-69f4-428a-9235-cfdd9775c509",
+        "3e8bdc92-4934-457e-85cc-8b9d14bf51c0",
+        "5c9c17d3-9d6a-4fa1-a2a4-ae98eefbbd25"
+      ],
+      "stage": "memo",
+      "status": "validated",
+      "wall_seconds": 0.004
+    }
+  ],
+  "tier": "standard"
+}

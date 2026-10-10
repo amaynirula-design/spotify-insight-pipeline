@@ -1,0 +1,167 @@
+{
+  "classification_scope": {
+    "distinct_nonempty_texts": 484189,
+    "duplicate_text_groups": 15922,
+    "largest_duplicate_groups": [
+      {
+        "rows": 12845,
+        "text": "Good"
+      },
+      {
+        "rows": 5551,
+        "text": "Nice"
+      },
+      {
+        "rows": 4096,
+        "text": "Excellent"
+      },
+      {
+        "rows": 3948,
+        "text": "Great"
+      },
+      {
+        "rows": 3359,
+        "text": "Awesome"
+      },
+      {
+        "rows": 3136,
+        "text": "Love it"
+      },
+      {
+        "rows": 2769,
+        "text": "Very good"
+      },
+      {
+        "rows": 2134,
+        "text": "Nice app"
+      },
+      {
+        "rows": 1973,
+        "text": "Amazing"
+      },
+      {
+        "rows": 1901,
+        "text": "Worst app"
+      }
+    ],
+    "nonempty_to_classify": 660609,
+    "rows_served_by_exact_text_reuse": 176420
+  },
+  "counts": {
+    "duplicate_review_ids": 0,
+    "empty_review_text": 13,
+    "missing_app_version": 159701,
+    "records": 660622
+  },
+  "dropped_duplicate_id_rows": [],
+  "file_bytes": 97400616,
+  "file_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6",
+  "first_review": "2022-05-17 00:01:07",
+  "ingested_at": "2026-10-08T06:26:07Z",
+  "input_id": "1fc85de68a30",
+  "input_path": "data/spotify_reviews_18months.csv",
+  "last_review": "2023-11-15 23:16:10",
+  "manifest_check": {
+    "bytes_match": true,
+    "months_match": true,
+    "profile_matches": true,
+    "ratings_match": true,
+    "sha256_matches": true
+  },
+  "notes": [
+    "Missing app_version does not prevent classification.",
+    "Exact-text reuse keys on the unmodified review_text string; no trimming or case folding."
+  ],
+  "parser": "csv.DictReader(strict=True, newline='', utf-8-sig)",
+  "quarantined_at_ingestion": [
+    {
+      "reason": "empty_review_text",
+      "review_id": "5d085a1f-1737-45a6-a3fb-5211b327ec27"
+    },
+    {
+      "reason": "empty_review_text",
+      "review_id": "be032618-08ae-4dde-b0b2-d2ddcd8ea5a6"
+    },
+    {
+      "reason": "empty_review_text",
+      "review_id": "f7c94991-0fc2-49a5-b47e-510e97a1632c"
+    },
+    {
+      "reason": "empty_review_text",
+      "review_id": "f5b40f1f-6621-456f-b1f2-0b3a9361c793"
+    },
+    {
+      "reason": "empty_review_text",
+      "review_id": "7121867d-b162-4b15-a45f-6352dcff92c1"
+    },
+    {
+      "reason": "empty_review_text",
+      "review_id": "f0df3892-1cfd-44f6-b3bb-a2eef7e69f6e"
+    },
+    {
+      "reason": "empty_review_text",
+      "review_id": "a3b536ac-b508-4e02-8550-ff7ea0bf79c2"
+    },
+    {
+      "reason": "empty_review_text",
+      "review_id": "b9587209-7961-4fd2-903c-fcd0fa924721"
+    },
+    {
+      "reason": "empty_review_text",
+      "review_id": "1687e070-9c26-4657-9ecc-0141405bcd4b"
+    },
+    {
+      "reason": "empty_review_text",
+      "review_id": "34bf6347-1625-46cd-b6fa-82913e2f665d"
+    },
+    {
+      "reason": "empty_review_text",
+      "review_id": "e4a05a09-be34-40a3-9b4a-e3976dea1b82"
+    },
+    {
+      "reason": "empty_review_text",
+      "review_id": "1bbad718-5df1-4669-841d-d1d6a040945a"
+    },
+    {
+      "reason": "empty_review_text",
+      "review_id": "7c26b1a0-8e0b-426d-976c-15b526f94e30"
+    }
+  ],
+  "reviews_by_month": {
+    "2022-05": 15461,
+    "2022-06": 30338,
+    "2022-07": 32784,
+    "2022-08": 30732,
+    "2022-09": 26933,
+    "2022-10": 27572,
+    "2022-11": 27349,
+    "2022-12": 31744,
+    "2023-01": 28609,
+    "2023-02": 20889,
+    "2023-03": 27238,
+    "2023-04": 25014,
+    "2023-05": 28062,
+    "2023-06": 27117,
+    "2023-07": 85079,
+    "2023-08": 30438,
+    "2023-09": 41634,
+    "2023-10": 89104,
+    "2023-11": 34525
+  },
+  "reviews_by_rating": {
+    "1": 242620,
+    "2": 31034,
+    "3": 33268,
+    "4": 54140,
+    "5": 299560
+  },
+  "text_length_chars_distinct": {
+    "max": 1693,
+    "mean": 98.57,
+    "median": 55,
+    "multiline_texts": 68,
+    "p90": 250,
+    "p99": 495,
+    "total": 47724767
+  }
+}

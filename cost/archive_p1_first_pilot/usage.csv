@@ -1,0 +1,13 @@
+run_id,role,provider,model,effort,tier,item,unit,billed_units,attempts,source
+cold,enrich,openai,gpt-6-luna,none,standard,input_cached,token,4659,4,sum over pilot_calls.jsonl where run_id=cold and role=enrich
+cold,enrich,openai,gpt-6-luna,none,standard,input_uncached,token,4176,4,sum over pilot_calls.jsonl where run_id=cold and role=enrich
+cold,enrich,openai,gpt-6-luna,none,standard,output,token,1678,4,sum over pilot_calls.jsonl where run_id=cold and role=enrich
+cold,group,openai,gpt-6-luna,low,standard,input_cached,token,0,16,sum over pilot_calls.jsonl where run_id=cold and role=group
+cold,group,openai,gpt-6-luna,low,standard,input_uncached,token,6379,16,sum over pilot_calls.jsonl where run_id=cold and role=group
+cold,group,openai,gpt-6-luna,low,standard,output,token,1722,16,sum over pilot_calls.jsonl where run_id=cold and role=group
+cold,memo,openai,gpt-6-luna,medium,standard,input_cached,token,0,1,sum over pilot_calls.jsonl where run_id=cold and role=memo
+cold,memo,openai,gpt-6-luna,medium,standard,input_uncached,token,6052,1,sum over pilot_calls.jsonl where run_id=cold and role=memo
+cold,memo,openai,gpt-6-luna,medium,standard,output,token,1391,1,sum over pilot_calls.jsonl where run_id=cold and role=memo
+cold,verify,openai,gpt-6-luna,low,standard,input_cached,token,0,1,sum over pilot_calls.jsonl where run_id=cold and role=verify
+cold,verify,openai,gpt-6-luna,low,standard,input_uncached,token,937,1,sum over pilot_calls.jsonl where run_id=cold and role=verify
+cold,verify,openai,gpt-6-luna,low,standard,output,token,590,1,sum over pilot_calls.jsonl where run_id=cold and role=verify

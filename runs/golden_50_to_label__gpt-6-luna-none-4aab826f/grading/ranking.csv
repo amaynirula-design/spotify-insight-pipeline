@@ -1,0 +1,12 @@
+rank,issue_id,complaint_count,severity_sum,mean_severity,priority_score
+1,billing.paywall,4,12,3.000000,12
+2,usability.ads,4,9,2.250000,9
+3,other.general,4,8,2.000000,8
+4,playback.crash,2,8,4.000000,8
+5,playback.stops,2,7,3.500000,7
+6,downloads.offline,1,4,4.000000,4
+7,other.boycott,2,4,2.000000,4
+8,billing.price,1,3,3.000000,3
+9,catalog.lyrics,1,3,3.000000,3
+10,usability.controls,1,3,3.000000,3
+11,usability.ui,1,2,2.000000,2

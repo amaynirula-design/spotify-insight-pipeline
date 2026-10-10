@@ -1,0 +1,34 @@
+{
+  "all_three_agree": 0.8,
+  "compared": 20,
+  "disagreeing_records": 4,
+  "intent_agreement": 1.0,
+  "label_config": "gpt-6-luna@none|enrich_p2|schema-s1|4aab826f",
+  "most_common_disagreements": [
+    [
+      "severity: enricher=2 verifier=3",
+      3
+    ],
+    [
+      "topic: enricher=billing verifier=usability",
+      1
+    ]
+  ],
+  "needs_review_flag_also_disagreed": 0,
+  "needs_review_flagged_in_sample": 0,
+  "note": "Verifier labels are a second opinion from a model, not ground truth; they never overwrite enrichment labels.",
+  "sample_rule": {
+    "fraction": 0.2,
+    "max": 2000,
+    "min": 20,
+    "seed": "verify-sample-v1"
+  },
+  "sample_size": 20,
+  "severity_exact_agreement": 0.85,
+  "severity_mean_abs_difference": 0.15,
+  "stage": "verify",
+  "topic_agreement": 0.95,
+  "verifier_answers": 20,
+  "verifier_unanswered": 0,
+  "verify_config": "gpt-6-luna@low|verify_v1|schema-s1|a240da73"
+}

@@ -1,0 +1,12 @@
+{
+  "allow_multi_issue": false,
+  "analysis_count": 10,
+  "analysis_sha256": "66c227e1443a8f51b7e667648cffb08e11380a7275b96eccd3a650530c9e6603",
+  "classification_input_fields": [
+    "review_text"
+  ],
+  "exported_at": "2026-10-08T05:35:53Z",
+  "input_file": "synthetic_injection_input.csv",
+  "label_config": "gpt-6-luna@none|enrich_p2|schema-s1|4aab826f",
+  "version": "a5-audit-v1"
+}

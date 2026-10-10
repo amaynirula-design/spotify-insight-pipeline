@@ -1,0 +1,355 @@
+{
+  "api_cost_usd_measured": 0.14694,
+  "api_cost_usd_unresolved_estimate": 0,
+  "calls_by_role": {
+    "enrich": {
+      "attempts": 292,
+      "call_seconds_sum": 1402.99419,
+      "cost_usd": 0.099345,
+      "input_cached_tokens": 493584,
+      "input_uncached_tokens": 212957,
+      "output_tokens": 146226,
+      "reasoning_tokens": 0,
+      "retry_attempts": 122,
+      "succeeded": 292,
+      "unresolved_reserved_usd": 0
+    },
+    "group": {
+      "attempts": 22,
+      "call_seconds_sum": 83.7578,
+      "cost_usd": 0.003763,
+      "input_cached_tokens": 0,
+      "input_uncached_tokens": 16403,
+      "output_tokens": 4246,
+      "reasoning_tokens": 2664,
+      "retry_attempts": 0,
+      "succeeded": 22,
+      "unresolved_reserved_usd": 0
+    },
+    "memo": {
+      "attempts": 1,
+      "call_seconds_sum": 15.17275,
+      "cost_usd": 0.001294,
+      "input_cached_tokens": 0,
+      "input_uncached_tokens": 6654,
+      "output_tokens": 1258,
+      "reasoning_tokens": 432,
+      "retry_attempts": 0,
+      "succeeded": 1,
+      "unresolved_reserved_usd": 0
+    },
+    "verify": {
+      "attempts": 100,
+      "call_seconds_sum": 777.747027,
+      "cost_usd": 0.042537,
+      "input_cached_tokens": 0,
+      "input_uncached_tokens": 89378,
+      "output_tokens": 67199,
+      "reasoning_tokens": 48259,
+      "retry_attempts": 0,
+      "succeeded": 100,
+      "unresolved_reserved_usd": 0
+    }
+  },
+  "cost_note": "cost_usd = provider-reported usage x cost/rates.csv; calls without usage are listed as unresolved reserved estimates",
+  "counts": {
+    "cache_reuse_rows": 1552,
+    "completed": 10000,
+    "distinct_texts": 8448,
+    "empty_text": 0,
+    "n_rows": 10000,
+    "pending": 0,
+    "quarantined_nonempty": 0
+  },
+  "export_status_counts": {
+    "cache_reuse": 1552,
+    "completed": 10000
+  },
+  "exported_at": "2026-10-08T05:35:48Z",
+  "input_file": "analysis_10000.csv",
+  "input_sha256": "eaa62ca6d44d717302904a9c922e99b0b4584d174309cb45295ecbc2ba2a91b5",
+  "is_complete": true,
+  "label_config": "gpt-6-luna@none|enrich_p2|schema-s1|4aab826f",
+  "limits": {
+    "backoff_base_seconds": 2.0,
+    "budget_usd": 1.0,
+    "invalid_output_retries": 1,
+    "max_consecutive_deferred": 3,
+    "max_fallback_fraction": 0.0,
+    "max_transient_retries": 4,
+    "max_workers": 8,
+    "request_timeout_s": 180,
+    "requests_per_minute": 400,
+    "tokens_per_minute": 400000
+  },
+  "provider": "openai",
+  "run_dir": "analysis_10000__gpt-6-luna-none-4aab826f",
+  "stage_configs": {
+    "enrich": "gpt-6-luna@none|enrich_p2|schema-s1|4aab826f",
+    "group": "gpt-6-luna@low|group_g1|schema-s1|1fbb6d6a",
+    "memo": "gpt-6-luna@medium|memo_m1|schema-s1|09d5f306",
+    "verify": "gpt-6-luna@low|verify_v1|schema-s1|a240da73"
+  },
+  "stage_log": [
+    {
+      "classification_scope": {
+        "distinct_nonempty_texts": 8448,
+        "duplicate_text_groups": 287,
+        "nonempty_to_classify": 10000,
+        "rows_served_by_exact_text_reuse": 1552
+      },
+      "counts": {
+        "duplicate_review_ids": 0,
+        "empty_review_text": 0,
+        "missing_app_version": 2447,
+        "records": 10000
+      },
+      "finished_at": "2026-10-08T05:17:50Z",
+      "invocation": "20261007T221750-55b37f",
+      "stage": "ingest",
+      "wall_seconds": 0.003
+    },
+    {
+      "budget_cap_usd": 2.0,
+      "checkpoint_written": null,
+      "counts_after": {
+        "cache_reuse_rows": 1552,
+        "completed": 10000,
+        "distinct_texts": 8448,
+        "empty_text": 0,
+        "n_rows": 10000,
+        "pending": 0,
+        "quarantined_nonempty": 0
+      },
+      "counts_before": {
+        "cache_reuse_rows": 958,
+        "completed": 1437,
+        "distinct_texts": 8448,
+        "empty_text": 0,
+        "n_rows": 10000,
+        "pending": 8563,
+        "quarantined_nonempty": 0
+      },
+      "events": {
+        "completed": 7969,
+        "fallback_quote": 16,
+        "invalid_duplicate_ref": 67,
+        "invalid_missing_from_output": 6,
+        "invalid_quote_not_in_text": 207,
+        "invalid_unknown_code": 4,
+        "stray_refs": 2
+      },
+      "finished_at": "2026-10-08T05:20:59Z",
+      "first_pass_requests_done": 160,
+      "interrupted_calls_reconciled": 0,
+      "invocation": "20261007T221750-55b37f",
+      "label_config": "gpt-6-luna@none|enrich_p2|schema-s1|4aab826f",
+      "pending_texts_at_start": 7969,
+      "phase": "initial",
+      "requests_planned": 160,
+      "spent_usd_this_invocation": 0.094181,
+      "spent_usd_total_ledger": 0.107254,
+      "stage": "enrich",
+      "stop_reason": null,
+      "wall_seconds": 188.715,
+      "workers": 8
+    },
+    {
+      "all_three_agree": 0.7835,
+      "compared": 2000,
+      "disagreeing_records": 433,
+      "finished_at": "2026-10-08T05:33:58Z",
+      "intent_agreement": 0.9485,
+      "invocation": "20261007T221750-55b37f",
+      "label_config": "gpt-6-luna@none|enrich_p2|schema-s1|4aab826f",
+      "most_common_disagreements": [
+        [
+          "severity: enricher=2 verifier=3",
+          53
+        ],
+        [
+          "topic: enricher=billing verifier=usability",
+          37
+        ],
+        [
+          "topic: enricher=other verifier=catalog",
+          32
+        ],
+        [
+          "topic: enricher=catalog verifier=usability",
+          26
+        ],
+        [
+          "topic: enricher=usability verifier=other",
+          25
+        ],
+        [
+          "severity: enricher=4 verifier=3",
+          22
+        ],
+        [
+          "intent: enricher=cancellation verifier=complaint",
+          20
+        ],
+        [
+          "topic: enricher=other verifier=usability",
+          19
+        ],
+        [
+          "severity: enricher=2 verifier=1",
+          18
+        ],
+        [
+          "topic: enricher=usability verifier=playback",
+          17
+        ],
+        [
+          "severity: enricher=3 verifier=4",
+          17
+        ],
+        [
+          "severity: enricher=1 verifier=2",
+          17
+        ],
+        [
+          "topic: enricher=other verifier=playback",
+          16
+        ],
+        [
+          "intent: enricher=praise verifier=unclear",
+          14
+        ],
+        [
+          "intent: enricher=unclear verifier=praise",
+          13
+        ]
+      ],
+      "needs_review_flag_also_disagreed": 83,
+      "needs_review_flagged_in_sample": 275,
+      "note": "Verifier labels are a second opinion from a model, not ground truth; they never overwrite enrichment labels.",
+      "sample_rule": {
+        "fraction": 0.2,
+        "max": 2000,
+        "min": 20,
+        "seed": "verify-sample-v1"
+      },
+      "sample_size": 2000,
+      "severity_exact_agreement": 0.9195,
+      "severity_mean_abs_difference": 0.0905,
+      "stage": "verify",
+      "topic_agreement": 0.8675,
+      "verifier_answers": 2000,
+      "verifier_unanswered": 0,
+      "verify_config": "gpt-6-luna@low|verify_v1|schema-s1|a240da73",
+      "wall_seconds": 779.484
+    },
+    {
+      "fallback_names": 0,
+      "finished_at": "2026-10-08T05:35:26Z",
+      "group_config": "gpt-6-luna@low|group_g1|schema-s1|1fbb6d6a",
+      "invocation": "20261007T221750-55b37f",
+      "issues": 22,
+      "memberships": 4603,
+      "named_now": 22,
+      "stage": "group",
+      "wall_seconds": 87.741
+    },
+    {
+      "finished_at": "2026-10-08T05:35:26Z",
+      "invocation": "20261007T221750-55b37f",
+      "issues": 22,
+      "memberships": 4603,
+      "model_calls": 0,
+      "stage": "rank",
+      "top5": [
+        {
+          "complaint_count": 852,
+          "issue_id": "billing.paywall",
+          "mean_severity": "2.901408",
+          "priority_score": 2472,
+          "rank": 1,
+          "severity_sum": 2472
+        },
+        {
+          "complaint_count": 1186,
+          "issue_id": "other.general",
+          "mean_severity": "1.997470",
+          "priority_score": 2369,
+          "rank": 2,
+          "severity_sum": 2369
+        },
+        {
+          "complaint_count": 616,
+          "issue_id": "usability.ads",
+          "mean_severity": "2.147727",
+          "priority_score": 1323,
+          "rank": 3,
+          "severity_sum": 1323
+        },
+        {
+          "complaint_count": 313,
+          "issue_id": "usability.controls",
+          "mean_severity": "2.936102",
+          "priority_score": 919,
+          "rank": 4,
+          "severity_sum": 919
+        },
+        {
+          "complaint_count": 327,
+          "issue_id": "usability.ui",
+          "mean_severity": "2.360856",
+          "priority_score": 772,
+          "rank": 5,
+          "severity_sum": 772
+        }
+      ],
+      "wall_seconds": 0.054
+    },
+    {
+      "attempts": 1,
+      "claims_cited": [
+        "C001",
+        "C003",
+        "C004",
+        "C009",
+        "C012",
+        "C013",
+        "C015",
+        "C021",
+        "C023",
+        "C029",
+        "C031"
+      ],
+      "facts_cited": [
+        "F002",
+        "F007",
+        "F009",
+        "F010",
+        "F013",
+        "F031",
+        "F034",
+        "F035",
+        "F037",
+        "F038",
+        "F057",
+        "F058",
+        "F075"
+      ],
+      "finished_at": "2026-10-08T05:35:41Z",
+      "invocation": "20261007T221750-55b37f",
+      "memo_config": "gpt-6-luna@medium|memo_m1|schema-s1|09d5f306",
+      "problems": [],
+      "reused_saved_draft": false,
+      "reviews_cited": [
+        "704a2eb2-d139-4f8f-8fba-40b5357347fd",
+        "ff91b91b-1a9c-4391-b4a2-d45200e746c7",
+        "6ea80aa3-f397-483e-b0f5-04fbfadc4a08",
+        "f1abd13b-2391-4b04-8109-efa7f3cfed0b"
+      ],
+      "stage": "memo",
+      "status": "validated",
+      "wall_seconds": 15.35
+    }
+  ],
+  "tier": "standard"
+}

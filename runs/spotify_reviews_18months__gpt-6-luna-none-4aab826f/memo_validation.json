@@ -1,0 +1,39 @@
+{
+  "attempts": 1,
+  "claims_cited": [
+    "C001",
+    "C002",
+    "C009",
+    "C013",
+    "C015",
+    "C017",
+    "C021",
+    "C025",
+    "C027",
+    "C029",
+    "C031"
+  ],
+  "facts_cited": [
+    "F006",
+    "F007",
+    "F010",
+    "F012",
+    "F031",
+    "F034",
+    "F035",
+    "F037",
+    "F038",
+    "F075",
+    "F079"
+  ],
+  "memo_config": "gpt-6-luna@medium|memo_m1|schema-s1|09d5f306",
+  "problems": [],
+  "reused_saved_draft": false,
+  "reviews_cited": [
+    "f7218ea9-a26a-4184-a839-2b42c37752fc",
+    "730160f8-4711-4065-97d0-38a32a87c309",
+    "6c356a4e-7088-4736-b26e-885c5aae5582"
+  ],
+  "stage": "memo",
+  "status": "validated"
+}

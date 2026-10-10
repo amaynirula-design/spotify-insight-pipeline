@@ -1,0 +1,27 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+# raw 97.4 MB source CSV: download separately (see README), checksum in data/manifest.json
+data/spotify_reviews_18months.csv
+# local working state (SQLite); exported evidence lives in runs/, grading/, cost/, evals/
+state/
+*.db
+*.db-wal
+*.db-shm
+local-reference*.json
+self-check*.json
+# duplicates of files that are committed in grading/
+runs/spotify_reviews_18months__*/checkpoint_*.json
+runs/spotify_reviews_18months__*/membership.csv
+# screen recordings are large: linked from the README instead of committed
+evals/recordings/*.mov
+# course-issued instruction documents and scripts: supplied in the dataset ZIP, not redistributed here
+data/GRADING_CONTRACT.md
+data/COST_CALCULATOR.md
+data/README.md
+data/check_submission.py
+data/prepare_dataset.py

@@ -1,0 +1,78 @@
+fact_id,label,value,formula
+F001,rows in the source file,"10,000",COUNT(*) of ingested rows
+F002,reviews with a completed classification,"10,000",rows joined to a completed result
+F003,share of nonempty reviews classified,100.0%,completed / nonempty rows
+F004,empty-text reviews quarantined,0,rows whose text is empty or whitespace
+F005,nonempty reviews left unclassified (quarantined or pending),0,nonempty rows without a completed result
+F006,completed rows served by exact-duplicate text reuse,"1,552",completed rows whose result came from an identical text
+F007,complaint or cancellation reviews (ranking population),"4,603",completed rows with intent complaint or cancellation
+F008,complaint or cancellation reviews as a share of completed reviews,46.0%,ranking population / completed
+F009,completed reviews flagged needs_review,"1,380",completed rows with needs_review = true
+F010,topic usability: complaint/cancellation reviews,"1,256",sum of complaint_count over the topic's issues
+F011,topic usability: severity sum,"3,014",sum of severity_sum over the topic's issues
+F012,topic usability: share of all complaint/cancellation reviews,27.3%,topic complaint_count / ranking population
+F013,topic billing: complaint/cancellation reviews,966,sum of complaint_count over the topic's issues
+F014,topic billing: severity sum,"2,770",sum of severity_sum over the topic's issues
+F015,topic billing: share of all complaint/cancellation reviews,21.0%,topic complaint_count / ranking population
+F016,topic other: complaint/cancellation reviews,"1,246",sum of complaint_count over the topic's issues
+F017,topic other: severity sum,"2,479",sum of severity_sum over the topic's issues
+F018,topic other: share of all complaint/cancellation reviews,27.1%,topic complaint_count / ranking population
+F019,topic playback: complaint/cancellation reviews,575,sum of complaint_count over the topic's issues
+F020,topic playback: severity sum,"1,871",sum of severity_sum over the topic's issues
+F021,topic playback: share of all complaint/cancellation reviews,12.5%,topic complaint_count / ranking population
+F022,topic catalog: complaint/cancellation reviews,314,sum of complaint_count over the topic's issues
+F023,topic catalog: severity sum,903,sum of severity_sum over the topic's issues
+F024,topic catalog: share of all complaint/cancellation reviews,6.8%,topic complaint_count / ranking population
+F025,topic access: complaint/cancellation reviews,153,sum of complaint_count over the topic's issues
+F026,topic access: severity sum,585,sum of severity_sum over the topic's issues
+F027,topic access: share of all complaint/cancellation reviews,3.3%,topic complaint_count / ranking population
+F028,topic downloads: complaint/cancellation reviews,87,sum of complaint_count over the topic's issues
+F029,topic downloads: severity sum,291,sum of severity_sum over the topic's issues
+F030,topic downloads: share of all complaint/cancellation reviews,1.9%,topic complaint_count / ranking population
+F031,topic support: complaint/cancellation reviews,6,sum of complaint_count over the topic's issues
+F032,topic support: severity sum,18,sum of severity_sum over the topic's issues
+F033,topic support: share of all complaint/cancellation reviews,0.1%,topic complaint_count / ranking population
+F034,billing.paywall: share of all complaint/cancellation reviews,18.5%,issue complaint_count / ranking population
+F035,billing.paywall: reviews expressing cancellation intent,165,"members with intent = cancellation (expressed intent, not observed churn)"
+F036,billing.paywall: complaints in its peak month (Oct 2023),437,max monthly member count
+F037,"billing.paywall: complaints as a share of completed reviews, Aug 2022-Oct 2022 (prior comparable period, denominator 1,316)",3.3%,"44 issue complaints / 1,316 completed reviews in the period"
+F038,"billing.paywall: complaints as a share of completed reviews, Aug 2023-Oct 2023 (recent comparable period, denominator 2,465)",21.9%,"541 issue complaints / 2,465 completed reviews in the period"
+F039,other.general: share of all complaint/cancellation reviews,25.8%,issue complaint_count / ranking population
+F040,other.general: reviews expressing cancellation intent,75,"members with intent = cancellation (expressed intent, not observed churn)"
+F041,other.general: complaints in its peak month (Jul 2023),537,max monthly member count
+F042,"other.general: complaints as a share of completed reviews, Aug 2022-Oct 2022 (prior comparable period, denominator 1,316)",2.8%,"37 issue complaints / 1,316 completed reviews in the period"
+F043,"other.general: complaints as a share of completed reviews, Aug 2023-Oct 2023 (recent comparable period, denominator 2,465)",14.3%,"353 issue complaints / 2,465 completed reviews in the period"
+F044,usability.ads: share of all complaint/cancellation reviews,13.4%,issue complaint_count / ranking population
+F045,usability.ads: reviews expressing cancellation intent,40,"members with intent = cancellation (expressed intent, not observed churn)"
+F046,usability.ads: complaints in its peak month (Oct 2023),67,max monthly member count
+F047,"usability.ads: complaints as a share of completed reviews, Aug 2022-Oct 2022 (prior comparable period, denominator 1,316)",6.3%,"83 issue complaints / 1,316 completed reviews in the period"
+F048,"usability.ads: complaints as a share of completed reviews, Aug 2023-Oct 2023 (recent comparable period, denominator 2,465)",5.7%,"141 issue complaints / 2,465 completed reviews in the period"
+F049,usability.controls: share of all complaint/cancellation reviews,6.8%,issue complaint_count / ranking population
+F050,usability.controls: reviews expressing cancellation intent,30,"members with intent = cancellation (expressed intent, not observed churn)"
+F051,usability.controls: complaints in its peak month (Oct 2023),49,max monthly member count
+F052,"usability.controls: complaints as a share of completed reviews, Aug 2022-Oct 2022 (prior comparable period, denominator 1,316)",3.0%,"39 issue complaints / 1,316 completed reviews in the period"
+F053,"usability.controls: complaints as a share of completed reviews, Aug 2023-Oct 2023 (recent comparable period, denominator 2,465)",3.4%,"83 issue complaints / 2,465 completed reviews in the period"
+F054,usability.ui: share of all complaint/cancellation reviews,7.1%,issue complaint_count / ranking population
+F055,usability.ui: reviews expressing cancellation intent,34,"members with intent = cancellation (expressed intent, not observed churn)"
+F056,usability.ui: complaints in its peak month (Oct 2023),82,max monthly member count
+F057,"usability.ui: complaints as a share of completed reviews, Aug 2022-Oct 2022 (prior comparable period, denominator 1,316)",1.7%,"22 issue complaints / 1,316 completed reviews in the period"
+F058,"usability.ui: complaints as a share of completed reviews, Aug 2023-Oct 2023 (recent comparable period, denominator 2,465)",4.7%,"116 issue complaints / 2,465 completed reviews in the period"
+F059,playback.stops: share of all complaint/cancellation reviews,4.7%,issue complaint_count / ranking population
+F060,playback.stops: reviews expressing cancellation intent,20,"members with intent = cancellation (expressed intent, not observed churn)"
+F061,playback.stops: complaints in its peak month (Dec 2022),39,max monthly member count
+F062,"playback.stops: complaints as a share of completed reviews, Aug 2022-Oct 2022 (prior comparable period, denominator 1,316)",1.6%,"21 issue complaints / 1,316 completed reviews in the period"
+F063,"playback.stops: complaints as a share of completed reviews, Aug 2023-Oct 2023 (recent comparable period, denominator 2,465)",1.6%,"40 issue complaints / 2,465 completed reviews in the period"
+F064,playback.crash: share of all complaint/cancellation reviews,3.1%,issue complaint_count / ranking population
+F065,playback.crash: reviews expressing cancellation intent,7,"members with intent = cancellation (expressed intent, not observed churn)"
+F066,playback.crash: complaints in its peak month (Jul 2022),27,max monthly member count
+F067,"playback.crash: complaints as a share of completed reviews, Aug 2022-Oct 2022 (prior comparable period, denominator 1,316)",1.3%,"17 issue complaints / 1,316 completed reviews in the period"
+F068,"playback.crash: complaints as a share of completed reviews, Aug 2023-Oct 2023 (recent comparable period, denominator 2,465)",1.2%,"30 issue complaints / 2,465 completed reviews in the period"
+F069,access.login: share of all complaint/cancellation reviews,2.7%,issue complaint_count / ranking population
+F070,access.login: reviews expressing cancellation intent,4,"members with intent = cancellation (expressed intent, not observed churn)"
+F071,access.login: complaints in its peak month (Jul 2023),15,max monthly member count
+F072,"access.login: complaints as a share of completed reviews, Aug 2022-Oct 2022 (prior comparable period, denominator 1,316)",0.5%,"7 issue complaints / 1,316 completed reviews in the period"
+F073,"access.login: complaints as a share of completed reviews, Aug 2023-Oct 2023 (recent comparable period, denominator 2,465)",1.5%,"38 issue complaints / 2,465 completed reviews in the period"
+F074,independent verifier: reviews re-labelled,"2,000",seeded random sample of completed rows
+F075,independent verifier: topic agreement with the enricher,86.8%,matching topic / compared
+F076,independent verifier: intent agreement with the enricher,94.8%,matching intent / compared
+F077,independent verifier: exact severity agreement with the enricher,92.0%,matching severity / compared

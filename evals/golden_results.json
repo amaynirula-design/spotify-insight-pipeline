@@ -1,0 +1,52 @@
+{
+  "n": 50,
+  "label_config": "gpt-6-luna@none|enrich_p2|schema-s1|4aab826f",
+  "predictions_file": "runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/enriched.jsonl.gz",
+  "missing_or_quarantined_predictions": 0,
+  "topic_agreement": 0.74,
+  "intent_agreement": 0.9,
+  "severity_exact_agreement": 0.82,
+  "all_three_agreement": 0.68,
+  "severity_mean_absolute_error": 0.24,
+  "sentiment_mean_absolute_error": 0.12,
+  "sentiment_tolerance_predeclared": 0.5,
+  "sentiment_within_tolerance": 1.0,
+  "human_ambiguous_cases": 9,
+  "agreement_on_unambiguous_cases": {
+    "topic": 0.7805,
+    "intent": 0.9756,
+    "severity": 0.8537,
+    "all": 0.7073
+  },
+  "evidence_quote_exact_substring": 1.0,
+  "evidence_quote_overlaps_human_quote": 0.98,
+  "entity_additions_not_in_human_list": 32,
+  "needs_review_as_prediction": {
+    "model_flag_and_human_flag": 5,
+    "model_flag_only": 0,
+    "human_flag_only": 4,
+    "neither": 41,
+    "model_flagged_and_label_wrong": 0,
+    "model_unflagged_and_label_wrong": 16
+  },
+  "per_topic_counts": {
+    "human": {
+      "other": 34,
+      "usability": 8,
+      "playback": 4,
+      "access": 1,
+      "catalog": 1,
+      "billing": 1,
+      "downloads": 1
+    },
+    "model": {
+      "other": 28,
+      "billing": 5,
+      "usability": 9,
+      "playback": 4,
+      "catalog": 3,
+      "downloads": 1
+    }
+  },
+  "note": "Fifty cases are a small diagnostic sample, not a precise population-accuracy estimate. Missing or quarantined predictions count as incorrect."
+}

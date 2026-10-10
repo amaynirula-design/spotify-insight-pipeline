@@ -1,0 +1,69 @@
+{
+  "classification_scope": {
+    "distinct_nonempty_texts": 100,
+    "duplicate_text_groups": 0,
+    "largest_duplicate_groups": [],
+    "nonempty_to_classify": 100,
+    "rows_served_by_exact_text_reuse": 0
+  },
+  "counts": {
+    "duplicate_review_ids": 0,
+    "empty_review_text": 0,
+    "missing_app_version": 18,
+    "records": 100
+  },
+  "dropped_duplicate_id_rows": [],
+  "file_bytes": 15466,
+  "file_sha256": "c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e",
+  "first_review": "2022-06-02 10:30:18",
+  "ingested_at": "2026-10-07T20:05:25Z",
+  "input_id": "c884ac3b9be5",
+  "input_path": "/Users/amaynirula/Desktop/Haas/2nd Year/Agentic AI/Final Project/data/cost_100.csv",
+  "last_review": "2023-11-13 15:07:19",
+  "manifest_check": {
+    "bytes_match": true,
+    "sha256_matches": true
+  },
+  "notes": [
+    "Missing app_version does not prevent classification.",
+    "Exact-text reuse keys on the unmodified review_text string; no trimming or case folding."
+  ],
+  "parser": "csv.DictReader(strict=True, newline='', utf-8-sig)",
+  "quarantined_at_ingestion": [],
+  "reviews_by_month": {
+    "2022-06": 5,
+    "2022-07": 5,
+    "2022-08": 6,
+    "2022-09": 5,
+    "2022-10": 4,
+    "2022-11": 1,
+    "2022-12": 2,
+    "2023-01": 4,
+    "2023-02": 4,
+    "2023-03": 7,
+    "2023-04": 4,
+    "2023-05": 5,
+    "2023-06": 4,
+    "2023-07": 11,
+    "2023-08": 3,
+    "2023-09": 6,
+    "2023-10": 19,
+    "2023-11": 5
+  },
+  "reviews_by_rating": {
+    "1": 33,
+    "2": 8,
+    "3": 6,
+    "4": 10,
+    "5": 43
+  },
+  "text_length_chars_distinct": {
+    "max": 486,
+    "mean": 80.42,
+    "median": 46,
+    "multiline_texts": 0,
+    "p90": 186,
+    "p99": 486,
+    "total": 8042
+  }
+}

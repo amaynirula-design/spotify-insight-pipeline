@@ -1,0 +1,19 @@
+review_id,fields,enricher_topic,verifier_topic,enricher_intent,verifier_intent,enricher_severity,verifier_severity,enricher_code,review_text
+0a5ff524-27b1-4f3b-a761-17ca48ee731d,topic,other,playback,praise,praise,1,1,general,Best app for listening music
+0b5db00e-a562-4125-897e-3e73937b53bf,topic,usability,other,request,request,1,1,ui,"DEAR DEVELOPER, WE NEED A CHAT FEATURE ON SPOTIFYY"
+0d9c62d1-2b53-4887-8156-a28eeac86e82,topic,usability,other,complaint,complaint,2,2,ui,Recent update bad and needs rework
+232c669e-8bfe-4642-b0c9-229c2911cc6c,severity,usability,usability,complaint,complaint,2,3,controls,"Sometimes the shuffle doesn't work. The app will play a total of 3 songs from my library, figured out how to fix this issue. Back to being a great app."
+3e503f9c-5c5b-4edc-bfd6-a19104c0822e,topic,other,usability,praise,praise,1,1,general,i have had premium for 5+ years and can't live without it. My kids are obsessed as well. We have playlists for everything.
+4519d4b9-f083-4035-b478-338b73322b47,intent+severity,catalog,catalog,request,complaint,1,3,lyrics,Bring back lyrics feature 🐌
+50626053-301c-42fa-91aa-2f88aef82e64,topic,usability,billing,complaint,complaint,3,3,ads,I say it's great for music but the ads is unbearable not only it's unskippable it's all 25+ sec long and you get 2 ads and when you want to choose a song in your playlist your getting another ad so shuffle is the only option here and I don't understand why would you need to pay to play songs in orde
+5c581e49-727a-4221-be0a-a59344c78d60,severity,billing,billing,complaint,complaint,3,2,paywall,Good but everything is premium
+62ad2462-7b07-4238-9025-8cdcaf4e7c8d,intent,other,other,praise,unclear,1,1,general,It's aight
+7a7e7a59-4d62-46de-b524-7e83e0831caa,topic,other,catalog,praise,praise,1,1,general,Love this app there's so much music to listen to and I use my playlists all the time! 👍
+7f1073d4-34a7-45b2-80b8-e0c1edcfaa5e,topic,other,catalog,praise,praise,1,1,general,I love the music on Spotify
+a1a28752-3256-4f81-b888-3e943343529f,severity,catalog,catalog,complaint,complaint,2,3,library,It's nice but gospel music isn't much
+adc4c3e4-3717-4888-ad86-c9381c224d2f,severity,usability,usability,complaint,complaint,2,3,ui,After the update the app is very irritating! Spotify has removed all the basic features for which we used to love this app. It used be my favourite app.. This is ridiculous!
+c13dcedc-50da-48a8-a90d-cfb037a66478,topic,billing,usability,complaint,complaint,3,3,paywall,wow what a nice of them they removed the mix old shuffle now it shuffle s the worst possible songs in so they can sell their premium pack and the removed our right to forward or rewind the song removed our right to hear the previous songs wow 🫡 wanna give 100/100 what a good platform for enjoying mu
+e07b106c-f454-46aa-a592-0b92d644bac0,severity,usability,usability,complaint,complaint,2,3,ads,"Even if you have ""premium"", this app kinda garbage. Also ""30 minutes of uninterrupted listening"" ?????? Try 5. Try again."
+e16a4550-43e7-4ae1-b538-a65cc652c31b,topic,billing,usability,cancellation,cancellation,3,3,paywall,Am very sad about the new spotfy update. i can't play song happly . Can't repeat and play specific part.please solve this matter. I'm leaving spotfy
+e5e6c55f-3069-4b7c-9807-f8b5d5bf2726,severity,usability,usability,complaint,complaint,2,3,ads,Too many ads.... it's literally useless if u hv not taken premium
+f67fefbf-9055-4f7c-a777-80446653997c,severity,billing,billing,complaint,complaint,2,3,paywall,"I don't like this app, it forcing me to buy premium 😔🤥"

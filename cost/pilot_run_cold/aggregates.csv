@@ -1,0 +1,15 @@
+rank,issue_id,issue_name,topic,complaint_count,cancellation_count,severity_sum,mean_severity,priority_score,needs_review_count,sev1,sev2,sev3,sev4,sev5
+1,billing.paywall,Free-Tier Playback Restrictions,billing,11,3,33,3.000000,33,1,0,0,11,0,0
+2,other.general,General App Dissatisfaction,other,8,1,16,2.000000,16,0,0,8,0,0,0
+3,usability.ads,Frequent and intrusive ads,usability,8,0,16,2.000000,16,0,0,8,0,0,0
+4,usability.controls,Playback Controls Behave Unexpectedly,usability,3,0,9,3.000000,9,0,0,0,3,0,0
+5,usability.ui,App Update and Settings Usability,usability,4,1,9,2.250000,9,0,0,3,1,0,0
+6,access.login,Unable to Log In With Account Credentials,access,2,0,8,4.000000,8,0,0,0,0,2,0
+7,playback.crash,App Crashes or Gets Stuck Loading,playback,2,0,8,4.000000,8,0,0,0,0,2,0
+8,downloads.offline,Offline Downloads Fail or Get Stuck,downloads,2,0,7,3.500000,7,0,0,0,1,1,0
+9,catalog.lyrics,Lyrics Sometimes Missing,catalog,2,0,6,3.000000,6,0,0,0,2,0,0
+10,catalog.missing,Missing Music in the Catalog,catalog,2,0,6,3.000000,6,0,0,0,2,0,0
+11,other.boycott,Objection to LGBTQ support,other,3,1,6,2.000000,6,0,0,3,0,0,0
+12,playback.connect,Internet Connection Errors,playback,2,0,6,3.000000,6,0,0,0,2,0,0
+13,catalog.recs,Unwanted Music Recommendations,catalog,2,1,5,2.500000,5,0,0,1,1,0,0
+14,playback.stops,Music Stops During Playback,playback,1,0,3,3.000000,3,0,0,0,1,0,0

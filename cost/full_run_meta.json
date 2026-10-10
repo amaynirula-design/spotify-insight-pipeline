@@ -1,0 +1,20 @@
+{
+  "source_run_dir": "spotify_reviews_18months__gpt-6-luna-none-4aab826f",
+  "input_file": "spotify_reviews_18months.csv",
+  "input_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6",
+  "stage_times_excluded_from_projection": {},
+  "rows": 660622,
+  "distinct_texts": 484189,
+  "workers": 24,
+  "stage_wall_seconds": {
+    "ingest": 0.011,
+    "enrich": 3093.591,
+    "export": 82.075,
+    "verify": 708.449,
+    "group": 157.237,
+    "rank": 11.184,
+    "memo": 47.644
+  },
+  "label_config": "gpt-6-luna@none|enrich_p2|schema-s1|4aab826f",
+  "note": "Enrichment timing covers the invocations logged in this run folder; texts already cached from an earlier checkpoint were not re-sent."
+}

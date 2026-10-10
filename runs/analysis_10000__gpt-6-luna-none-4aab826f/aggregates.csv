@@ -1,0 +1,23 @@
+rank,issue_id,issue_name,topic,complaint_count,cancellation_count,severity_sum,mean_severity,priority_score,needs_review_count,sev1,sev2,sev3,sev4,sev5
+1,billing.paywall,Free-Tier Features Require Premium,billing,852,165,2472,2.901408,2472,59,0,86,764,2,0
+2,other.general,General App Dissatisfaction,other,1186,75,2369,1.997470,2369,207,9,1172,4,1,0
+3,usability.ads,Frequent and lengthy ads,usability,616,40,1323,2.147727,1323,33,0,526,89,1,0
+4,usability.controls,Playback and playlist controls malfunction,usability,313,30,919,2.936102,919,18,1,23,284,5,0
+5,usability.ui,Interface Changes and Missing Controls,usability,327,34,772,2.360856,772,66,0,217,102,8,0
+6,playback.stops,Playback Stops or Fails to Start,playback,215,20,696,3.237209,696,20,0,1,162,52,0
+7,playback.crash,"App Crashes, Freezes, or Fails to Load",playback,144,7,512,3.555556,512,31,0,6,53,84,1
+8,access.login,Login and Account Setup Problems,access,123,4,464,3.772358,464,8,0,3,22,98,0
+9,playback.connect,Playback connection and device switching issues,playback,124,14,408,3.290323,408,12,0,4,80,40,0
+10,catalog.missing,Songs and podcasts are missing or unavailable,catalog,109,9,320,2.935780,320,14,0,13,91,4,1
+11,downloads.offline,Downloaded Music Fails Offline,downloads,87,8,291,3.344828,291,11,0,3,52,31,1
+12,catalog.recs,Unwanted Song Recommendations and Suggestions,catalog,105,9,280,2.666667,280,8,0,36,68,1,0
+13,catalog.lyrics,Lyrics Missing or Incorrect,catalog,77,4,229,2.974026,229,3,0,5,69,3,0
+14,playback.perf,Slow and laggy app performance,playback,53,4,155,2.924528,155,3,0,4,49,0,0
+15,billing.price,Premium Plans Feel Too Expensive,billing,75,1,150,2.000000,150,15,0,75,0,0,0
+16,billing.charges,Subscription Charges and Premium Activation,billing,39,4,148,3.794872,148,8,0,1,16,12,10
+17,access.account,Account Access and Recovery Problems,access,30,4,121,4.033333,121,12,0,3,5,10,12
+18,other.boycott,Ethical and Country-Based Boycott Statements,other,57,12,104,1.824561,104,7,10,47,0,0,0
+19,playback.audio,Audio Quality and Volume Problems,playback,39,5,100,2.564103,100,4,0,17,22,0,0
+20,catalog.library,Saved Songs and Playlists Missing,catalog,23,1,74,3.217391,74,7,0,5,11,4,3
+21,support.support,Difficulty Reaching or Receiving Support,support,6,0,18,3.000000,18,0,0,2,3,0,1
+22,other.noise,Unintelligible or unrelated review text,other,3,0,6,2.000000,6,3,0,3,0,0,0

@@ -1,0 +1,26 @@
+You write a short decision memo for Spotify's head of product at the end of the review window. Question: where should the next quarter of product effort go: access, usability, playback, or billing/support?
+
+You receive one JSON evidence pack built by code from saved pipeline outputs:
+- "ranking": issues ordered by the baseline priority score (complaint_count x mean_severity = severity_sum), with names from the grouping step
+- "claims": issue-level numbers, each with a claim id such as C007
+- "facts": other computed numbers (coverage, denominators, shares, trends, evaluation results), each with a fact id such as F012 and a plain-language label
+- "evidence": a few customer quotes per top issue with review IDs
+- "limits": statements you must respect
+
+STRICT RULES
+1. Never type a statistic yourself. To use a number write its placeholder, {{C007}} or {{F012}}; code substitutes the exact value and the citation. Do not put a number next to a placeholder. Years, quarter names, the 1-5 severity scale and rank positions up to 10 may be written directly.
+2. Refer to issues by name followed by the issue id in backticks, for example `billing.paywall`.
+3. Quote customers only from "evidence", cited as [review:<review_id>]. Do not invent or alter IDs. Keep quotes short and leave out personal details.
+4. Reviews are self-selected public app reviews. Cancellation language is expressed intent, not observed churn. Do not estimate revenue, churn, customer counts or causal retention effects.
+5. Issues whose id starts with "other." (generic criticism, boycott statements, noise) are not actionable product areas; say so instead of recommending them, and give the top actionable issue.
+6. Use only the supplied pack. If something is not in it, say it is unknown.
+
+FORMAT (markdown, 350 to 550 words)
+# Decision memo: next-quarter product priority
+## Recommendation      one paragraph: the priority, in terms of the question's four options, and the single most important reason
+## Evidence            the ranked issues that support it, with placeholders and two or three cited quotes
+## Alternatives        the next two or three candidates and why they rank lower or differ in kind
+## Limitations         coverage, label quality, review bias, what the data cannot show
+## What to check next  two or three concrete follow-ups
+
+Output only the memo.

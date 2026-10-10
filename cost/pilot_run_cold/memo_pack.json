@@ -1,0 +1,806 @@
+{
+  "claims": [
+    {
+      "claim_id": "C001",
+      "issue_id": "billing.paywall",
+      "metric": "complaint_count",
+      "value": "11"
+    },
+    {
+      "claim_id": "C002",
+      "issue_id": "billing.paywall",
+      "metric": "severity_sum",
+      "value": "33"
+    },
+    {
+      "claim_id": "C003",
+      "issue_id": "billing.paywall",
+      "metric": "mean_severity",
+      "value": "3.000000"
+    },
+    {
+      "claim_id": "C004",
+      "issue_id": "billing.paywall",
+      "metric": "priority_score",
+      "value": "33"
+    },
+    {
+      "claim_id": "C005",
+      "issue_id": "other.general",
+      "metric": "complaint_count",
+      "value": "8"
+    },
+    {
+      "claim_id": "C006",
+      "issue_id": "other.general",
+      "metric": "severity_sum",
+      "value": "16"
+    },
+    {
+      "claim_id": "C007",
+      "issue_id": "other.general",
+      "metric": "mean_severity",
+      "value": "2.000000"
+    },
+    {
+      "claim_id": "C008",
+      "issue_id": "other.general",
+      "metric": "priority_score",
+      "value": "16"
+    },
+    {
+      "claim_id": "C009",
+      "issue_id": "usability.ads",
+      "metric": "complaint_count",
+      "value": "8"
+    },
+    {
+      "claim_id": "C010",
+      "issue_id": "usability.ads",
+      "metric": "severity_sum",
+      "value": "16"
+    },
+    {
+      "claim_id": "C011",
+      "issue_id": "usability.ads",
+      "metric": "mean_severity",
+      "value": "2.000000"
+    },
+    {
+      "claim_id": "C012",
+      "issue_id": "usability.ads",
+      "metric": "priority_score",
+      "value": "16"
+    },
+    {
+      "claim_id": "C013",
+      "issue_id": "usability.controls",
+      "metric": "complaint_count",
+      "value": "3"
+    },
+    {
+      "claim_id": "C014",
+      "issue_id": "usability.controls",
+      "metric": "severity_sum",
+      "value": "9"
+    },
+    {
+      "claim_id": "C015",
+      "issue_id": "usability.controls",
+      "metric": "mean_severity",
+      "value": "3.000000"
+    },
+    {
+      "claim_id": "C016",
+      "issue_id": "usability.controls",
+      "metric": "priority_score",
+      "value": "9"
+    },
+    {
+      "claim_id": "C017",
+      "issue_id": "usability.ui",
+      "metric": "complaint_count",
+      "value": "4"
+    },
+    {
+      "claim_id": "C018",
+      "issue_id": "usability.ui",
+      "metric": "severity_sum",
+      "value": "9"
+    },
+    {
+      "claim_id": "C019",
+      "issue_id": "usability.ui",
+      "metric": "mean_severity",
+      "value": "2.250000"
+    },
+    {
+      "claim_id": "C020",
+      "issue_id": "usability.ui",
+      "metric": "priority_score",
+      "value": "9"
+    },
+    {
+      "claim_id": "C021",
+      "issue_id": "access.login",
+      "metric": "complaint_count",
+      "value": "2"
+    },
+    {
+      "claim_id": "C022",
+      "issue_id": "access.login",
+      "metric": "severity_sum",
+      "value": "8"
+    },
+    {
+      "claim_id": "C023",
+      "issue_id": "access.login",
+      "metric": "mean_severity",
+      "value": "4.000000"
+    },
+    {
+      "claim_id": "C024",
+      "issue_id": "access.login",
+      "metric": "priority_score",
+      "value": "8"
+    },
+    {
+      "claim_id": "C025",
+      "issue_id": "playback.crash",
+      "metric": "complaint_count",
+      "value": "2"
+    },
+    {
+      "claim_id": "C026",
+      "issue_id": "playback.crash",
+      "metric": "severity_sum",
+      "value": "8"
+    },
+    {
+      "claim_id": "C027",
+      "issue_id": "playback.crash",
+      "metric": "mean_severity",
+      "value": "4.000000"
+    },
+    {
+      "claim_id": "C028",
+      "issue_id": "playback.crash",
+      "metric": "priority_score",
+      "value": "8"
+    },
+    {
+      "claim_id": "C029",
+      "issue_id": "downloads.offline",
+      "metric": "complaint_count",
+      "value": "2"
+    },
+    {
+      "claim_id": "C030",
+      "issue_id": "downloads.offline",
+      "metric": "severity_sum",
+      "value": "7"
+    },
+    {
+      "claim_id": "C031",
+      "issue_id": "downloads.offline",
+      "metric": "mean_severity",
+      "value": "3.500000"
+    },
+    {
+      "claim_id": "C032",
+      "issue_id": "downloads.offline",
+      "metric": "priority_score",
+      "value": "7"
+    }
+  ],
+  "evidence": {
+    "access.login": [
+      {
+        "month": "2023-01",
+        "quote": "It not letting me into my account and there are to many ads",
+        "review_id": "32fb340f-4f9f-4551-8dae-755221e58d6a",
+        "severity": 4
+      },
+      {
+        "month": "2023-08",
+        "quote": "Will not except my password",
+        "review_id": "de0a9cdf-8974-48bc-802f-331228df4619",
+        "severity": 4
+      }
+    ],
+    "billing.paywall": [
+      {
+        "month": "2023-10",
+        "quote": "can't even go back few second to play music",
+        "review_id": "9e5f9745-f8be-48d3-b9de-4d118507d94a",
+        "severity": 3
+      },
+      {
+        "month": "2023-04",
+        "quote": "forcing you to pay premium for basic things",
+        "review_id": "a78d831a-69f4-428a-9235-cfdd9775c509",
+        "severity": 3
+      },
+      {
+        "month": "2022-08",
+        "quote": "I CAN ONLY SKIP 6 OF THEM",
+        "review_id": "ebc64fe2-9553-4528-87d5-cb4bb9783be6",
+        "severity": 3
+      }
+    ],
+    "downloads.offline": [
+      {
+        "month": "2022-06",
+        "quote": "always stuck downloading songs in the background",
+        "review_id": "2ffdf599-a0d5-4c01-bf26-025215d44c06",
+        "severity": 3
+      }
+    ],
+    "other.general": [
+      {
+        "month": "2023-10",
+        "quote": "Used to love the app but recent update is very disappointing bye Spotify",
+        "review_id": "b47c203f-366e-4409-922d-cd52aa8bbef6",
+        "severity": 2
+      },
+      {
+        "month": "2023-10",
+        "quote": "It was a good app . But now it's a trash 🗑️",
+        "review_id": "c1ab120a-f91f-4ee3-87f5-66f352e2d47f",
+        "severity": 2
+      }
+    ],
+    "playback.crash": [
+      {
+        "month": "2023-01",
+        "quote": "The latest update has caused my app to crash I cant open the app please fix.",
+        "review_id": "55cc3abf-c295-4591-8c3a-78085cfdefaa",
+        "severity": 4
+      },
+      {
+        "month": "2022-07",
+        "quote": "App is stuck on loading/logo screen",
+        "review_id": "66a29b3c-c14d-440e-b722-b23e0c99ae82",
+        "severity": 4
+      }
+    ],
+    "usability.ads": [
+      {
+        "month": "2023-11",
+        "quote": "every 1 or 2 song then instant ads",
+        "review_id": "3e8bdc92-4934-457e-85cc-8b9d14bf51c0",
+        "severity": 2
+      },
+      {
+        "month": "2023-11",
+        "quote": "premium adds are everywhere now",
+        "review_id": "035213ba-b1b9-411c-b028-70296e5f0e73",
+        "severity": 2
+      },
+      {
+        "month": "2022-09",
+        "quote": "This app is nice but adds are too much",
+        "review_id": "85383985-844d-4f9b-bcd9-d6016ac35f6b",
+        "severity": 2
+      }
+    ],
+    "usability.controls": [
+      {
+        "month": "2023-10",
+        "quote": "plays any song of the Playlist randomly",
+        "review_id": "5c9c17d3-9d6a-4fa1-a2a4-ae98eefbbd25",
+        "severity": 3
+      },
+      {
+        "month": "2023-06",
+        "quote": "music adjustment doesn't work Perporly",
+        "review_id": "9c9757da-6b99-4c95-a0e7-0661ee858027",
+        "severity": 3
+      },
+      {
+        "month": "2023-10",
+        "quote": "removed basic features of music player",
+        "review_id": "7084ced1-0428-4093-9328-442f74719b4f",
+        "severity": 3
+      }
+    ],
+    "usability.ui": [
+      {
+        "month": "2023-07",
+        "quote": "The update made the app useless",
+        "review_id": "45c561b9-cc47-4d80-95d3-f0d20bc84af3",
+        "severity": 2
+      },
+      {
+        "month": "2023-03",
+        "quote": "new homescreen update is horrible",
+        "review_id": "94c9f2f9-36fa-4c11-936e-660514fe7a35",
+        "severity": 2
+      },
+      {
+        "month": "2023-03",
+        "quote": "without any clear way to disable the automatic playing in the settings",
+        "review_id": "d455c11e-c530-4c03-a395-38f5a5cdb8d3",
+        "severity": 3
+      }
+    ]
+  },
+  "facts": [
+    {
+      "fact_id": "F001",
+      "label": "rows in the source file",
+      "value": "100"
+    },
+    {
+      "fact_id": "F002",
+      "label": "reviews with a completed classification",
+      "value": "100"
+    },
+    {
+      "fact_id": "F003",
+      "label": "share of nonempty reviews classified",
+      "value": "100.0%"
+    },
+    {
+      "fact_id": "F004",
+      "label": "empty-text reviews quarantined",
+      "value": "0"
+    },
+    {
+      "fact_id": "F005",
+      "label": "nonempty reviews left unclassified (quarantined or pending)",
+      "value": "0"
+    },
+    {
+      "fact_id": "F006",
+      "label": "completed rows served by exact-duplicate text reuse",
+      "value": "0"
+    },
+    {
+      "fact_id": "F007",
+      "label": "complaint or cancellation reviews (ranking population)",
+      "value": "52"
+    },
+    {
+      "fact_id": "F008",
+      "label": "complaint or cancellation reviews as a share of completed reviews",
+      "value": "52.0%"
+    },
+    {
+      "fact_id": "F009",
+      "label": "completed reviews flagged needs_review",
+      "value": "5"
+    },
+    {
+      "fact_id": "F010",
+      "label": "topic usability: complaint/cancellation reviews",
+      "value": "15"
+    },
+    {
+      "fact_id": "F011",
+      "label": "topic usability: severity sum",
+      "value": "34"
+    },
+    {
+      "fact_id": "F012",
+      "label": "topic usability: share of all complaint/cancellation reviews",
+      "value": "28.8%"
+    },
+    {
+      "fact_id": "F013",
+      "label": "topic billing: complaint/cancellation reviews",
+      "value": "11"
+    },
+    {
+      "fact_id": "F014",
+      "label": "topic billing: severity sum",
+      "value": "33"
+    },
+    {
+      "fact_id": "F015",
+      "label": "topic billing: share of all complaint/cancellation reviews",
+      "value": "21.2%"
+    },
+    {
+      "fact_id": "F016",
+      "label": "topic other: complaint/cancellation reviews",
+      "value": "11"
+    },
+    {
+      "fact_id": "F017",
+      "label": "topic other: severity sum",
+      "value": "22"
+    },
+    {
+      "fact_id": "F018",
+      "label": "topic other: share of all complaint/cancellation reviews",
+      "value": "21.2%"
+    },
+    {
+      "fact_id": "F019",
+      "label": "topic playback: complaint/cancellation reviews",
+      "value": "5"
+    },
+    {
+      "fact_id": "F020",
+      "label": "topic playback: severity sum",
+      "value": "17"
+    },
+    {
+      "fact_id": "F021",
+      "label": "topic playback: share of all complaint/cancellation reviews",
+      "value": "9.6%"
+    },
+    {
+      "fact_id": "F022",
+      "label": "topic catalog: complaint/cancellation reviews",
+      "value": "6"
+    },
+    {
+      "fact_id": "F023",
+      "label": "topic catalog: severity sum",
+      "value": "17"
+    },
+    {
+      "fact_id": "F024",
+      "label": "topic catalog: share of all complaint/cancellation reviews",
+      "value": "11.5%"
+    },
+    {
+      "fact_id": "F025",
+      "label": "topic access: complaint/cancellation reviews",
+      "value": "2"
+    },
+    {
+      "fact_id": "F026",
+      "label": "topic access: severity sum",
+      "value": "8"
+    },
+    {
+      "fact_id": "F027",
+      "label": "topic access: share of all complaint/cancellation reviews",
+      "value": "3.8%"
+    },
+    {
+      "fact_id": "F028",
+      "label": "topic downloads: complaint/cancellation reviews",
+      "value": "2"
+    },
+    {
+      "fact_id": "F029",
+      "label": "topic downloads: severity sum",
+      "value": "7"
+    },
+    {
+      "fact_id": "F030",
+      "label": "topic downloads: share of all complaint/cancellation reviews",
+      "value": "3.8%"
+    },
+    {
+      "fact_id": "F031",
+      "label": "billing.paywall: share of all complaint/cancellation reviews",
+      "value": "21.2%"
+    },
+    {
+      "fact_id": "F032",
+      "label": "billing.paywall: reviews expressing cancellation intent",
+      "value": "3"
+    },
+    {
+      "fact_id": "F033",
+      "label": "billing.paywall: complaints in its peak month (Oct 2023)",
+      "value": "7"
+    },
+    {
+      "fact_id": "F034",
+      "label": "billing.paywall: complaints as a share of completed reviews, Aug 2022-Oct 2022 (prior comparable period, denominator 15)",
+      "value": "13.3%"
+    },
+    {
+      "fact_id": "F035",
+      "label": "billing.paywall: complaints as a share of completed reviews, Aug 2023-Oct 2023 (recent comparable period, denominator 28)",
+      "value": "25.0%"
+    },
+    {
+      "fact_id": "F036",
+      "label": "other.general: share of all complaint/cancellation reviews",
+      "value": "15.4%"
+    },
+    {
+      "fact_id": "F037",
+      "label": "other.general: reviews expressing cancellation intent",
+      "value": "1"
+    },
+    {
+      "fact_id": "F038",
+      "label": "other.general: complaints in its peak month (Jun 2023)",
+      "value": "2"
+    },
+    {
+      "fact_id": "F039",
+      "label": "other.general: complaints as a share of completed reviews, Aug 2022-Oct 2022 (prior comparable period, denominator 15)",
+      "value": "0.0%"
+    },
+    {
+      "fact_id": "F040",
+      "label": "other.general: complaints as a share of completed reviews, Aug 2023-Oct 2023 (recent comparable period, denominator 28)",
+      "value": "7.1%"
+    },
+    {
+      "fact_id": "F041",
+      "label": "usability.ads: share of all complaint/cancellation reviews",
+      "value": "15.4%"
+    },
+    {
+      "fact_id": "F042",
+      "label": "usability.ads: reviews expressing cancellation intent",
+      "value": "0"
+    },
+    {
+      "fact_id": "F043",
+      "label": "usability.ads: complaints in its peak month (Nov 2023)",
+      "value": "2"
+    },
+    {
+      "fact_id": "F044",
+      "label": "usability.ads: complaints as a share of completed reviews, Aug 2022-Oct 2022 (prior comparable period, denominator 15)",
+      "value": "6.7%"
+    },
+    {
+      "fact_id": "F045",
+      "label": "usability.ads: complaints as a share of completed reviews, Aug 2023-Oct 2023 (recent comparable period, denominator 28)",
+      "value": "3.6%"
+    },
+    {
+      "fact_id": "F046",
+      "label": "usability.controls: share of all complaint/cancellation reviews",
+      "value": "5.8%"
+    },
+    {
+      "fact_id": "F047",
+      "label": "usability.controls: reviews expressing cancellation intent",
+      "value": "0"
+    },
+    {
+      "fact_id": "F048",
+      "label": "usability.controls: complaints in its peak month (Oct 2023)",
+      "value": "2"
+    },
+    {
+      "fact_id": "F049",
+      "label": "usability.controls: complaints as a share of completed reviews, Aug 2022-Oct 2022 (prior comparable period, denominator 15)",
+      "value": "0.0%"
+    },
+    {
+      "fact_id": "F050",
+      "label": "usability.controls: complaints as a share of completed reviews, Aug 2023-Oct 2023 (recent comparable period, denominator 28)",
+      "value": "7.1%"
+    },
+    {
+      "fact_id": "F051",
+      "label": "usability.ui: share of all complaint/cancellation reviews",
+      "value": "7.7%"
+    },
+    {
+      "fact_id": "F052",
+      "label": "usability.ui: reviews expressing cancellation intent",
+      "value": "1"
+    },
+    {
+      "fact_id": "F053",
+      "label": "usability.ui: complaints in its peak month (Mar 2023)",
+      "value": "2"
+    },
+    {
+      "fact_id": "F054",
+      "label": "usability.ui: complaints as a share of completed reviews, Aug 2022-Oct 2022 (prior comparable period, denominator 15)",
+      "value": "0.0%"
+    },
+    {
+      "fact_id": "F055",
+      "label": "usability.ui: complaints as a share of completed reviews, Aug 2023-Oct 2023 (recent comparable period, denominator 28)",
+      "value": "3.6%"
+    },
+    {
+      "fact_id": "F056",
+      "label": "access.login: share of all complaint/cancellation reviews",
+      "value": "3.8%"
+    },
+    {
+      "fact_id": "F057",
+      "label": "access.login: reviews expressing cancellation intent",
+      "value": "0"
+    },
+    {
+      "fact_id": "F058",
+      "label": "access.login: complaints in its peak month (Jan 2023)",
+      "value": "1"
+    },
+    {
+      "fact_id": "F059",
+      "label": "access.login: complaints as a share of completed reviews, Aug 2022-Oct 2022 (prior comparable period, denominator 15)",
+      "value": "0.0%"
+    },
+    {
+      "fact_id": "F060",
+      "label": "access.login: complaints as a share of completed reviews, Aug 2023-Oct 2023 (recent comparable period, denominator 28)",
+      "value": "3.6%"
+    },
+    {
+      "fact_id": "F061",
+      "label": "playback.crash: share of all complaint/cancellation reviews",
+      "value": "3.8%"
+    },
+    {
+      "fact_id": "F062",
+      "label": "playback.crash: reviews expressing cancellation intent",
+      "value": "0"
+    },
+    {
+      "fact_id": "F063",
+      "label": "playback.crash: complaints in its peak month (Jul 2022)",
+      "value": "1"
+    },
+    {
+      "fact_id": "F064",
+      "label": "playback.crash: complaints as a share of completed reviews, Aug 2022-Oct 2022 (prior comparable period, denominator 15)",
+      "value": "0.0%"
+    },
+    {
+      "fact_id": "F065",
+      "label": "playback.crash: complaints as a share of completed reviews, Aug 2023-Oct 2023 (recent comparable period, denominator 28)",
+      "value": "0.0%"
+    },
+    {
+      "fact_id": "F066",
+      "label": "downloads.offline: share of all complaint/cancellation reviews",
+      "value": "3.8%"
+    },
+    {
+      "fact_id": "F067",
+      "label": "downloads.offline: reviews expressing cancellation intent",
+      "value": "0"
+    },
+    {
+      "fact_id": "F068",
+      "label": "downloads.offline: complaints in its peak month (Jun 2022)",
+      "value": "1"
+    },
+    {
+      "fact_id": "F069",
+      "label": "downloads.offline: complaints as a share of completed reviews, Aug 2022-Oct 2022 (prior comparable period, denominator 15)",
+      "value": "0.0%"
+    },
+    {
+      "fact_id": "F070",
+      "label": "downloads.offline: complaints as a share of completed reviews, Aug 2023-Oct 2023 (recent comparable period, denominator 28)",
+      "value": "0.0%"
+    },
+    {
+      "fact_id": "F071",
+      "label": "independent verifier: reviews re-labelled",
+      "value": "20"
+    },
+    {
+      "fact_id": "F072",
+      "label": "independent verifier: topic agreement with the enricher",
+      "value": "95.0%"
+    },
+    {
+      "fact_id": "F073",
+      "label": "independent verifier: intent agreement with the enricher",
+      "value": "100.0%"
+    },
+    {
+      "fact_id": "F074",
+      "label": "independent verifier: exact severity agreement with the enricher",
+      "value": "85.0%"
+    }
+  ],
+  "limits": [
+    "Self-selected public Google Play reviews from a fixed historical window; not the customer population.",
+    "No revenue, plan tier or confirmed cancellation data: cancellation language is expressed intent only.",
+    "Labels come from a small model; verifier and golden-set agreement facts show their reliability.",
+    "The first and last calendar months of the window are partial.",
+    "The baseline score is complaint_count x mean_severity (= severity_sum); it measures review volume weighted by described impact, not business value."
+  ],
+  "question": "Where should the next quarter of product effort go: access, usability, playback, or billing/support?",
+  "ranking": [
+    {
+      "actionable_product_area": true,
+      "description": "Customers report being unable to choose songs, skip or return to previous tracks, rewind, or repeat playback without Premium. Some describe the free tier as having too many restrictions or say the app pushes them toward Premium.",
+      "issue_id": "billing.paywall",
+      "name": "Free-Tier Playback Restrictions",
+      "rank": 1,
+      "topic": "billing"
+    },
+    {
+      "actionable_product_area": false,
+      "description": "Customers express broad dissatisfaction with the app, describing it as bad, disappointing, or worse than before. They do not identify a specific feature or problem.",
+      "issue_id": "other.general",
+      "name": "General App Dissatisfaction",
+      "rank": 2,
+      "topic": "other"
+    },
+    {
+      "actionable_product_area": true,
+      "description": "Customers report that ads are too frequent, sometimes playing after only one or two songs or instead of songs. One customer says the ads are too loud.",
+      "issue_id": "usability.ads",
+      "name": "Frequent and intrusive ads",
+      "rank": 3,
+      "topic": "usability"
+    },
+    {
+      "actionable_product_area": true,
+      "description": "Customers report songs playing randomly within a playlist, music adjustment not working properly, and basic music-player features being unavailable.",
+      "issue_id": "usability.controls",
+      "name": "Playback Controls Behave Unexpectedly",
+      "rank": 4,
+      "topic": "usability"
+    },
+    {
+      "actionable_product_area": true,
+      "description": "Customers say an update made the app feel unusable and dislike the new home screen. One customer says there is no clear way in settings to disable automatic playback.",
+      "issue_id": "usability.ui",
+      "name": "App Update and Settings Usability",
+      "rank": 5,
+      "topic": "usability"
+    },
+    {
+      "actionable_product_area": true,
+      "description": "Customers say they cannot get into their account or that their password is not accepted.",
+      "issue_id": "access.login",
+      "name": "Unable to Log In With Account Credentials",
+      "rank": 6,
+      "topic": "access"
+    },
+    {
+      "actionable_product_area": true,
+      "description": "Customers say the app crashes when they try to open it or remains stuck on the loading or logo screen.",
+      "issue_id": "playback.crash",
+      "name": "App Crashes or Gets Stuck Loading",
+      "rank": 7,
+      "topic": "playback"
+    },
+    {
+      "actionable_product_area": true,
+      "description": "Customers say offline listening does not work and song downloads can remain stuck in the background.",
+      "issue_id": "downloads.offline",
+      "name": "Offline Downloads Fail or Get Stuck",
+      "rank": 8,
+      "topic": "downloads"
+    },
+    {
+      "actionable_product_area": true,
+      "description": "Customers report that lyrics are absent or do not appear for some songs.",
+      "issue_id": "catalog.lyrics",
+      "name": "Lyrics Sometimes Missing",
+      "rank": 9,
+      "topic": "catalog"
+    },
+    {
+      "actionable_product_area": true,
+      "description": "Customers say many songs are unavailable and that gospel music is limited.",
+      "issue_id": "catalog.missing",
+      "name": "Missing Music in the Catalog",
+      "rank": 10,
+      "topic": "catalog"
+    },
+    {
+      "actionable_product_area": false,
+      "description": "One customer calls the app bad because it supports LGBTQ people.",
+      "issue_id": "other.boycott",
+      "name": "Objection to LGBTQ support",
+      "rank": 11,
+      "topic": "other"
+    },
+    {
+      "actionable_product_area": true,
+      "description": "A customer says they are unable to connect to the internet.",
+      "issue_id": "playback.connect",
+      "name": "Internet Connection Errors",
+      "rank": 12,
+      "topic": "playback"
+    }
+  ]
+}

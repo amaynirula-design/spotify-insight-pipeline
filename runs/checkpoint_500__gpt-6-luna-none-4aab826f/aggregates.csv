@@ -1,0 +1,21 @@
+rank,issue_id,issue_name,topic,complaint_count,cancellation_count,severity_sum,mean_severity,priority_score,needs_review_count,sev1,sev2,sev3,sev4,sev5
+1,billing.paywall,Basic Music Controls Locked Behind Premium,billing,45,7,129,2.866667,129,0,0,6,39,0,0
+2,other.general,General dissatisfaction with the app,other,48,6,96,2.000000,96,7,0,48,0,0,0
+3,usability.ads,Frequent and Intrusive Ads,usability,34,2,71,2.088235,71,0,0,31,3,0,0
+4,playback.stops,Playback Stops or Fails to Start,playback,14,3,48,3.428571,48,1,0,0,8,6,0
+5,usability.ui,Home Screen Navigation and Missing Features,usability,18,2,41,2.277778,41,1,0,13,5,0,0
+6,playback.connect,Playback and Device Connection Problems,playback,12,3,40,3.333333,40,1,0,0,8,4,0
+7,usability.controls,Shuffle and Playback Controls Behave Unexpectedly,usability,12,0,34,2.833333,34,0,0,2,10,0,0
+8,access.login,Users unable to log in,access,7,0,27,3.857143,27,0,0,0,1,6,0
+9,downloads.offline,Downloads fail or disappear offline,downloads,7,2,27,3.857143,27,0,0,0,2,4,1
+10,playback.crash,App Crashes or Gets Stuck Loading,playback,7,0,26,3.714286,26,0,0,0,2,5,0
+11,catalog.missing,Songs Missing or Removed,catalog,7,1,21,3.000000,21,0,0,0,7,0,0
+12,catalog.lyrics,Lyrics Missing or Failing to Load,catalog,6,0,17,2.833333,17,0,0,1,5,0,0
+13,other.boycott,Political and Ethical Boycott Statements,other,8,2,15,1.875000,15,1,1,7,0,0,0
+14,catalog.recs,Unwanted or repetitive recommendations,catalog,6,1,13,2.166667,13,0,0,5,1,0,0
+15,billing.charges,Premium Payment and Activation Problems,billing,3,0,12,4.000000,12,0,0,0,0,3,0
+16,access.account,Account Access Issues,access,2,1,8,4.000000,8,1,0,0,1,0,1
+17,playback.perf,Playback Lag and Resource Use,playback,2,0,6,3.000000,6,0,0,0,2,0,0
+18,catalog.library,Limited Gospel Music Selection,catalog,2,0,5,2.500000,5,1,0,1,1,0,0
+19,billing.price,Perception That Spotify Prioritizes Money,billing,1,0,2,2.000000,2,0,0,1,0,0,0
+20,playback.audio,Unpleasant Playback Noise,playback,1,0,2,2.000000,2,0,0,1,0,0,0

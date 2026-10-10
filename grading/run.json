@@ -1,0 +1,12 @@
+{
+  "allow_multi_issue": false,
+  "analysis_count": 660622,
+  "analysis_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6",
+  "classification_input_fields": [
+    "review_text"
+  ],
+  "exported_at": "2026-10-10T01:07:33Z",
+  "input_file": "spotify_reviews_18months.csv",
+  "label_config": "gpt-6-luna@none|enrich_p2|schema-s1|4aab826f",
+  "version": "a5-audit-v1"
+}

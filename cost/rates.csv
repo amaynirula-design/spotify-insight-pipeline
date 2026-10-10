@@ -1,0 +1,10 @@
+provider,model,tier,item,unit,price,per_units,currency,status,source_url,checked_on
+openai,gpt-6-luna,standard,input_uncached,token,0.10,1000000,USD,used,https://developers.openai.com/api/docs/models/gpt-6-luna,2026-10-04
+openai,gpt-6-luna,standard,input_cached,token,0.01,1000000,USD,used,https://developers.openai.com/api/docs/models/gpt-6-luna,2026-10-04
+openai,gpt-6-luna,standard,output,token,0.50,1000000,USD,used,https://developers.openai.com/api/docs/models/gpt-6-luna,2026-10-04
+openai,gpt-6-luna,batch,input_uncached,token,0.05,1000000,USD,scenario_only,https://developers.openai.com/api/docs/models/gpt-6-luna,2026-10-04
+openai,gpt-6-luna,batch,input_cached,token,0.005,1000000,USD,scenario_only,https://developers.openai.com/api/docs/models/gpt-6-luna,2026-10-04
+openai,gpt-6-luna,batch,output,token,0.25,1000000,USD,scenario_only,https://developers.openai.com/api/docs/models/gpt-6-luna,2026-10-04
+mock,mock-rule-v0,standard,input_uncached,token,0,1000000,USD,offline_test_only,local rule-based stand-in (no API),2026-10-04
+mock,mock-rule-v0,standard,input_cached,token,0,1000000,USD,offline_test_only,local rule-based stand-in (no API),2026-10-04
+mock,mock-rule-v0,standard,output,token,0,1000000,USD,offline_test_only,local rule-based stand-in (no API),2026-10-04

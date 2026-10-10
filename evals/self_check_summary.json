@@ -1,0 +1,210 @@
+{
+  "audit_version": "a5-audit-v1",
+  "status": "review_required",
+  "working_coverage_point_candidate": 0.9999,
+  "coverage": {
+    "accounted_fraction": 1.0,
+    "duplicate_ids": 0,
+    "expected": 660622,
+    "invalid_or_unresolved": 0,
+    "labelable": 660609,
+    "labelable_completion_fraction": 0.999883,
+    "missing": 0,
+    "quarantined": 90,
+    "received_lines": 660622,
+    "unique_expected_ids": 660622,
+    "valid_cache_reuses": 176419,
+    "valid_completed": 660532,
+    "valid_completion_fraction": 0.999864
+  },
+  "issue_counts": {
+    "unfinished_classification": 1
+  },
+  "examples": [
+    {
+      "code": "unfinished_classification",
+      "detail": "77"
+    }
+  ],
+  "reported_calls": 16678,
+  "reported_input_tokens": 41448956,
+  "reported_output_tokens": 8559946,
+  "calculated_ranking": [
+    {
+      "complaint_count": 55963,
+      "issue_id": "billing.paywall",
+      "mean_severity": "2.911209",
+      "priority_score": 162920,
+      "rank": 1,
+      "severity_sum": 162920
+    },
+    {
+      "complaint_count": 78126,
+      "issue_id": "other.general",
+      "mean_severity": "1.995469",
+      "priority_score": 155898,
+      "rank": 2,
+      "severity_sum": 155898
+    },
+    {
+      "complaint_count": 38542,
+      "issue_id": "usability.ads",
+      "mean_severity": "2.139121",
+      "priority_score": 82446,
+      "rank": 3,
+      "severity_sum": 82446
+    },
+    {
+      "complaint_count": 20265,
+      "issue_id": "usability.controls",
+      "mean_severity": "2.960474",
+      "priority_score": 59994,
+      "rank": 4,
+      "severity_sum": 59994
+    },
+    {
+      "complaint_count": 20411,
+      "issue_id": "usability.ui",
+      "mean_severity": "2.271863",
+      "priority_score": 46371,
+      "rank": 5,
+      "severity_sum": 46371
+    },
+    {
+      "complaint_count": 13643,
+      "issue_id": "playback.stops",
+      "mean_severity": "3.241589",
+      "priority_score": 44225,
+      "rank": 6,
+      "severity_sum": 44225
+    },
+    {
+      "complaint_count": 9275,
+      "issue_id": "playback.crash",
+      "mean_severity": "3.600970",
+      "priority_score": 33399,
+      "rank": 7,
+      "severity_sum": 33399
+    },
+    {
+      "complaint_count": 8187,
+      "issue_id": "access.login",
+      "mean_severity": "3.904605",
+      "priority_score": 31967,
+      "rank": 8,
+      "severity_sum": 31967
+    },
+    {
+      "complaint_count": 7830,
+      "issue_id": "playback.connect",
+      "mean_severity": "3.259004",
+      "priority_score": 25518,
+      "rank": 9,
+      "severity_sum": 25518
+    },
+    {
+      "complaint_count": 7379,
+      "issue_id": "catalog.missing",
+      "mean_severity": "2.883453",
+      "priority_score": 21277,
+      "rank": 10,
+      "severity_sum": 21277
+    },
+    {
+      "complaint_count": 5828,
+      "issue_id": "downloads.offline",
+      "mean_severity": "3.435484",
+      "priority_score": 20022,
+      "rank": 11,
+      "severity_sum": 20022
+    },
+    {
+      "complaint_count": 6820,
+      "issue_id": "catalog.recs",
+      "mean_severity": "2.673314",
+      "priority_score": 18232,
+      "rank": 12,
+      "severity_sum": 18232
+    },
+    {
+      "complaint_count": 5166,
+      "issue_id": "catalog.lyrics",
+      "mean_severity": "2.966512",
+      "priority_score": 15325,
+      "rank": 13,
+      "severity_sum": 15325
+    },
+    {
+      "complaint_count": 2953,
+      "issue_id": "billing.charges",
+      "mean_severity": "3.745005",
+      "priority_score": 11059,
+      "rank": 14,
+      "severity_sum": 11059
+    },
+    {
+      "complaint_count": 3522,
+      "issue_id": "playback.perf",
+      "mean_severity": "2.957978",
+      "priority_score": 10418,
+      "rank": 15,
+      "severity_sum": 10418
+    },
+    {
+      "complaint_count": 4597,
+      "issue_id": "billing.price",
+      "mean_severity": "2.043072",
+      "priority_score": 9392,
+      "rank": 16,
+      "severity_sum": 9392
+    },
+    {
+      "complaint_count": 4809,
+      "issue_id": "other.boycott",
+      "mean_severity": "1.827615",
+      "priority_score": 8789,
+      "rank": 17,
+      "severity_sum": 8789
+    },
+    {
+      "complaint_count": 1969,
+      "issue_id": "access.account",
+      "mean_severity": "4.074149",
+      "priority_score": 8022,
+      "rank": 18,
+      "severity_sum": 8022
+    },
+    {
+      "complaint_count": 2085,
+      "issue_id": "playback.audio",
+      "mean_severity": "2.609592",
+      "priority_score": 5441,
+      "rank": 19,
+      "severity_sum": 5441
+    },
+    {
+      "complaint_count": 1372,
+      "issue_id": "catalog.library",
+      "mean_severity": "3.188047",
+      "priority_score": 4374,
+      "rank": 20,
+      "severity_sum": 4374
+    },
+    {
+      "complaint_count": 461,
+      "issue_id": "support.support",
+      "mean_severity": "2.514100",
+      "priority_score": 1159,
+      "rank": 21,
+      "severity_sum": 1159
+    },
+    {
+      "complaint_count": 125,
+      "issue_id": "other.noise",
+      "mean_severity": "1.952000",
+      "priority_score": 244,
+      "rank": 22,
+      "severity_sum": 244
+    }
+  ]
+}

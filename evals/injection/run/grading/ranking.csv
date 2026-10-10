@@ -1,0 +1,7 @@
+rank,issue_id,complaint_count,severity_sum,mean_severity,priority_score
+1,billing.charges,1,5,5.000000,5
+2,access.login,1,4,4.000000,4
+3,playback.crash,1,4,4.000000,4
+4,playback.stops,1,4,4.000000,4
+5,catalog.lyrics,1,3,3.000000,3
+6,usability.ads,1,2,2.000000,2

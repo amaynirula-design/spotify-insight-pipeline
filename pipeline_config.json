@@ -1,0 +1,59 @@
+{
+  "provider": "openai",
+  "tier": "standard",
+  "model_allowlist": [
+    "gpt-6-luna",
+    "mock-rule-v0"
+  ],
+  "roles": {
+    "enrich": {
+      "model": "gpt-6-luna",
+      "effort": "none",
+      "prompt": "enrich_p2",
+      "batch_size": 50,
+      "max_batch_chars": 14000,
+      "retry_batch_size": 5,
+      "max_output_tokens": 2000
+    },
+    "verify": {
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "prompt": "verify_v1",
+      "batch_size": 20,
+      "max_output_tokens": 4000
+    },
+    "group": {
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "prompt": "group_g1",
+      "examples_per_issue": 12,
+      "max_output_tokens": 1500
+    },
+    "memo": {
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "prompt": "memo_m1",
+      "top_issues": 8,
+      "quotes_per_issue": 3,
+      "max_output_tokens": 8000
+    }
+  },
+  "limits": {
+    "budget_usd": 1.0,
+    "max_workers": 24,
+    "requests_per_minute": 2000,
+    "tokens_per_minute": 1500000,
+    "max_transient_retries": 4,
+    "backoff_base_seconds": 2.0,
+    "invalid_output_retries": 1,
+    "max_fallback_fraction": 0.0,
+    "request_timeout_s": 180,
+    "max_consecutive_deferred": 3
+  },
+  "verify_sample": {
+    "seed": "verify-sample-v1",
+    "fraction": 0.2,
+    "min": 20,
+    "max": 2000
+  }
+}

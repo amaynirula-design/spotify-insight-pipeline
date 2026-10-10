@@ -1,0 +1,16 @@
+{
+  "dataset": "BwandoWando, 3.4 Million Spotify Google Store Reviews, v2 (CC0), course 18-month extract",
+  "dataset_url": "https://www.kaggle.com/datasets/bwandowando/3-4-million-spotify-google-store-reviews",
+  "file_bytes": 15466,
+  "file_sha256": "c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e",
+  "label_config": "gpt-6-luna@none|enrich_p2|schema-s1|4aab826f",
+  "provider": "openai",
+  "records": 100,
+  "source_file": "cost_100.csv",
+  "stage_configs": {
+    "enrich": "gpt-6-luna@none|enrich_p2|schema-s1|4aab826f",
+    "group": "gpt-6-luna@low|group_g1|schema-s1|1fbb6d6a",
+    "memo": "gpt-6-luna@medium|memo_m1|schema-s1|09d5f306",
+    "verify": "gpt-6-luna@low|verify_v1|schema-s1|a240da73"
+  }
+}
