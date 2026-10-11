@@ -25,3 +25,5 @@ data/COST_CALCULATOR.md
 data/README.md
 data/check_submission.py
 data/prepare_dataset.py
+# 50-row run that first enriched the golden texts; its calls are in the full call log and its small export only confuses (see README)
+runs/golden_50_to_label__*/

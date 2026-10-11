@@ -4,8 +4,9 @@ Turns the 97.4 MB course extract of Spotify Google Play reviews (660,622 rows, M
 ranked list of product issues and a decision memo whose every number traces back to saved calculations and
 source review IDs.
 
-**Final full-corpus run:** `runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/` (2026-10-09),
-exported to [`grading/`](grading/). Decision memo: [`memo.md`](memo.md).
+**Final full-corpus run:** [`runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/`](runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/) (2026-10-09; manifest: [`run_manifest.json`](runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/run_manifest.json)),
+exported to [`grading/`](grading/). Decision memo: [`memo.md`](memo.md). Label guide with real examples: [`LABELS.md`](LABELS.md).
+Cost calculator and replay instructions: [`cost/README.md`](cost/README.md).
 
 ## Results summary
 
@@ -15,13 +16,13 @@ All figures below are measured from saved runs; estimates are labelled as estima
 |---|---|---|
 | Source rows accounted for | **660,622 of 660,622** (0 missing, 0 duplicate IDs) | `grading/records.jsonl.gz`, [`evals/self_check_summary.json`](evals/self_check_summary.json) |
 | Completed classifications | **660,532 of 660,609** nonempty reviews (99.988%) | same |
-| Quarantined | **13** empty texts (`empty_review_text`) + **77** nonempty (76 invalid model output after the single retry, 1 provider rejection) | `runs/…18months…/quarantine.jsonl` |
+| Quarantined | **13** empty texts (`empty_review_text`) + **77** nonempty (76 invalid model output after the single retry, 1 provider rejection) | [`quarantine.jsonl`](runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/quarantine.jsonl) |
 | Exact-text cache reuse | 484,189 distinct texts sent once; **176,419** rows reuse a result with `cache_source_id` | checker: `valid_cache_reuses` |
 | Golden set (my 50 hand labels) | topic **74%**, intent **90%**, severity exact **82%** (MAE 0.24), sentiment MAE 0.12; 9 ambiguous cases | [`evals/golden_report.md`](evals/golden_report.md) |
-| Independent verifier (2,000 seeded reviews) | topic **87.1%**, intent **94.8%**, severity exact **91.5%**; 421 records disagree on at least one field | `runs/…18months…/verify_report.json`, `verify_disagreements.csv` |
+| Independent verifier (2,000 seeded reviews) | topic **87.1%**, intent **94.8%**, severity exact **91.5%**; 421 records disagree on at least one field | [`verify_report.json`](runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/verify_report.json), `verify_disagreements.csv` |
 | Injection / planted-error tests | 10 of 10 synthetic cases pass; 30 of 30 planted wrong labels detected, 0 false alarms | [`evals/injection/`](evals/injection/), [`evals/planted_error_results.json`](evals/planted_error_results.json) |
 | 100-review pilot | cold **$0.0044**, 84.4 s; warm **$0.00**, 0.4 s, **0** new model calls | [`cost/report.md`](cost/report.md) |
-| Full-run API cost | **$5.91** for every call behind the full export (enrich $5.86, verify $0.04, group and memo under $0.01) | `runs/…18months…/run_summary.json`, `grading/calls.jsonl.gz` |
+| Full-run API cost | **$5.91** for every call behind the full export (enrich $5.86, verify $0.04, group and memo under $0.01) | [`run_summary.json`](runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/run_summary.json), `grading/calls.jsonl.gz` |
 | Full-run time | 67 min wall-clock for the resumed run: enrichment 51 min at 24 workers (about 154 texts/s), verification 12 min, grouping, memo, ranking and export 4.5 min | `stage_log.jsonl` |
 | Instructor checker | coverage point candidate **0.9999**; the only flag is `unfinished_classification: 77` (the disclosed quarantines) | `evals/self_check_summary.json` |
 
@@ -39,7 +40,7 @@ Top of the baseline ranking (complaint and cancellation reviews only; score = co
 | 8 | `access.login` | Login and Account Access Problems | 8,187 | 3.904605 | 31,967 | 396 |
 
 All 22 issues: [`grading/ranking.csv`](grading/ranking.csv); topic and monthly rollups:
-`runs/…18months…/aggregates_by_topic.csv`, `aggregates_by_month.csv`.
+[`aggregates_by_topic.csv`](runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/aggregates_by_topic.csv), `aggregates_by_month.csv`.
 
 Two things to read with the ranking:
 
@@ -65,6 +66,7 @@ python check_submission.py check --reference local-reference.json --submission g
 ```
 
 The last two need the raw CSV in `data/` (see Setup). Everything else works from the repository as cloned.
+Use `python3` in place of `python` if your system has no `python` command.
 
 ## Setup
 
@@ -135,6 +137,11 @@ flowchart TD
 | 5 Rank | code/SQL | results + membership | `ranking.csv`, `aggregates*.csv` | none (pure arithmetic) | — |
 | 6 Recommend | **memo model** + code checks | `memo_pack.json` (ranking, claims, facts, ≤ 3 quotes per top issue) | `memo.md`, `claims.csv`, `facts.csv`, `memo_validation.json` | any unknown ID or typed number: 1 revision request, then the memo is marked `needs_human_fix` | validated or 2 attempts |
 
+The stage sequence is fixed. Code chooses every next step: which texts are pending, when to retry, quarantine,
+stop for the budget or resume, which reviews the verifier sees, which issue a complaint belongs to, and how issues
+are ranked. Models exercise judgment only inside a stage, on language: labelling a review, re-labelling it
+independently, naming an issue from quotes, and drafting the memo around numbers that code supplies.
+
 **Why each model call exists, and what code does instead**
 
 - *Enrich* needs language judgment: mixed-language, misspelled, sarcastic text mapped to one of 22 codes, an intent,
@@ -187,7 +194,7 @@ so results are reused only under unchanged settings. Every completed record carr
 came from an identical text. `enriched.jsonl.gz` adds `subtopic`, `issue_id`, `quote_origin` (`full_text`,
 `model`, `model_repaired`, `fallback_prefix`), `notes` and `attempts`.
 
-Labels: the eight course topics, five intents and the 1–5 severity scale from the course's `GRADING_CONTRACT.md` (in the dataset ZIP; `check_submission.py` at the repository root is the course's checker, unchanged).
+Labels ([`LABELS.md`](LABELS.md) shows how I applied each definition, with real examples): the eight course topics, five intents and the 1–5 severity scale from the course's `GRADING_CONTRACT.md` (in the dataset ZIP; `check_submission.py` at the repository root is the course's checker, unchanged).
 My custom subtopics (code → topic) and the worked examples given to the model are in
 [`pipeline/labels.py`](pipeline/labels.py) and [`pipeline/prompts/enrich_p2.txt`](pipeline/prompts/enrich_p2.txt);
 the other role prompts are next to it. Examples in the prompt are illustrative sentences, not dataset rows.
@@ -247,7 +254,11 @@ label with the flag, and the disagreement is listed in `verify_disagreements.csv
   sample are the stronger independent checks.
 - Results ([`evals/golden_report.md`](evals/golden_report.md), per-case details in `golden_cases.jsonl`): topic
   37/50, intent 45/50, severity 41/50, all three 34/50; on the 41 cases I did not mark ambiguous: 78% / 98% / 85%.
-  Quotes: 100% exact substrings (checked in code).
+  Quotes: 100% exact substrings (checked in code), and 98% overlap the quote I chose. Per-topic counts and
+  confusion tables are in the report. I left the optional entities column blank, so entities were not compared;
+  each of the 32 entities the code extracted is a lexicon term literally present in the text.
+- The golden texts were first enriched on 2026-10-07 in a 50-row run that reads only the text column (its 44 new
+  calls are part of `grading/calls.jsonl.gz`); the comparison uses the same saved results from the full export.
 - `needs_review` as a prediction: the model flagged 5 of the 50, all among the 9 I marked ambiguous, and all 5 of
   those labels matched mine. None of the 16 disagreements was flagged, so on this sample the flag identifies
   unreadable text but does not predict disagreement.
@@ -295,7 +306,8 @@ same model family as the enricher, so shared blind spots are possible.
   quotes, HTTP 429s, timeouts and a configuration error, and check the retry limit, the spend cap with
   reservations, in-flight reconciliation, resume without re-sending completed IDs, and the calculator arithmetic.
 - Real outcomes in the full run: 16,555 enrichment attempts, 2 failed (one HTTP 520 retried successfully, one
-  HTTP 403 on a retry → quarantined); 2.9% of texts needed the single invalid-output retry, mostly because the
+  HTTP 403 on a retry → quarantined; failed attempts are logged with zero tokens because the provider returned no
+  usage); 2.9% of texts needed the single invalid-output retry, mostly because the
   model left a required quote empty; 633 texts ended with a deterministic fallback quote and a review flag.
 - A real outage: during the 500-review checkpoint the laptop slept for about 97 minutes; two requests timed out
   with unknown billing status (their reservations, $0.0016, stay in the ledger as labelled estimates), were retried
@@ -319,6 +331,8 @@ same model family as the enricher, so shared blind spots are possible.
 - Labels are not perfectly repeatable: re-running the 100-review pilot changed a few labels for reasons unrelated
   to the prompt edit.
 - One issue per complaint: a review listing several problems counts only toward its most severe one.
+- 159,701 rows have no `app_version`. The field was not used for classification or ranking, so no version-level
+  conclusion is drawn.
 - Entities are literal English feature and competitor terms; non-English mentions are missed by design.
 - The saved-result cache treats identical text as identical meaning regardless of date or rating.
 
@@ -327,13 +341,13 @@ same model family as the enricher, so shared blind spots are possible.
 | Rubric point | Evidence |
 |---|---|
 | D1 accessible code, setup, artifacts | this README, `pipeline/`, `pipeline_config.json`, `.env.example`, `.gitignore`, `tests/` |
-| D2 architecture, shared schema, provenance | [Architecture](#architecture), `pipeline/labels.py`, `pipeline/prompts/`, `runs/…18months…/data_manifest.json`, `run_summary.json`, `run_log.jsonl` |
-| D3 memo numbers linked to calculations and sources | [`memo.md`](memo.md) appendix, `grading/claims.csv`, `runs/…18months…/facts.csv`, `grading/membership.csv`, [trace](#one-review-traced-end-to-end) |
+| D2 architecture, shared schema, provenance | [Architecture](#architecture), [`LABELS.md`](LABELS.md), `pipeline/labels.py`, `pipeline/prompts/`, [`run_manifest.json`](runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/run_manifest.json), [`data_manifest.json`](runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/data_manifest.json), `run_summary.json`, `run_log.jsonl` |
+| D3 memo numbers linked to calculations and sources | [`memo.md`](memo.md) appendix, `grading/claims.csv`, [`facts.csv`](runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/facts.csv), `grading/membership.csv`, [trace](#one-review-traced-end-to-end) |
 | D4 recommendation, alternatives, limitations | [`memo.md`](memo.md), [Limitations](#limitations) |
 | T1 golden labels, per-field comparison, error analysis | `evals/golden_50_labeled.csv` (+ v1, v2), `evals/golden_report.md`, `evals/golden_cases.jsonl`, [Golden set](#golden-set-50-hand-labels) |
-| T2 independent verification, planted-error and injection tests | `runs/…18months…/verify_report.json`, `verify_predictions.jsonl`, `verify_disagreements.csv`, `evals/planted_error_results.json`, `evals/injection/` |
-| T3 100-review pilot, calculator, retry/spend/recovery controls | `cost/` (calculator, `pilot_records.jsonl`, `pilot_calls.jsonl`, `rates.csv`, `usage.csv`, `report.md`, `assumptions.json`), `tests/test_offline.py`, [System behaviour](#system-behaviour-retries-spending-recovery) |
-| W1 ingestion, coverage, classification | `grading/ingestion.json`, `grading/records.jsonl.gz`, `runs/…18months…/ingestion_report.json`, `quarantine.jsonl`, `evals/self_check_summary.json` |
+| T2 independent verification, planted-error and injection tests | [`verify_report.json`](runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/verify_report.json), `verify_predictions.jsonl`, `verify_disagreements.csv`, `evals/planted_error_results.json`, `evals/injection/` |
+| T3 100-review pilot, calculator, retry/spend/recovery controls | [`cost/README.md`](cost/README.md), `cost/` (calculator, `pilot_records.jsonl`, `pilot_calls.jsonl`, `rates.csv`, `usage.csv`, `report.md`, `assumptions.json`), `tests/test_offline.py`, [System behaviour](#system-behaviour-retries-spending-recovery) |
+| W1 ingestion, coverage, classification | `grading/ingestion.json`, `grading/records.jsonl.gz`, [`ingestion_report.json`](runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/ingestion_report.json), `quarantine.jsonl`, `evals/self_check_summary.json` |
 | W2 staged program, bounded calls, saved handoffs, resume | `python -m pipeline run`, `grading/calls.jsonl.gz` (≤ 50 IDs per enrich call), `grading/checkpoint_before.json`, `checkpoint_after.json`, `stage_log.jsonl`, recording |
 | W3 reproducible ranking, grounded output | `python -m pipeline rerank --grading grading`, `grading/ranking.csv`, `grading/membership.csv`, `memo.md` |
 
@@ -346,4 +360,4 @@ Repository layout: `pipeline/` (stages and orchestrator), `cost/` (calculator an
 The pipeline code, tests and this README were written with an AI coding assistant (Claude Code) working under my
 direction; I ran the paid runs, made the budget and scaling decisions, and hand-labelled the golden set (with the
 revision history disclosed above). The memo text is model-drafted from saved aggregates, validated by code and
-then read by me.
+then read by me; its coverage line and appendix are generated by code.

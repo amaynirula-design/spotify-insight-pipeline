@@ -31,6 +31,7 @@ Generated offline by `python cost/calculator.py` from saved measurements (no API
 
 - End-to-end wall-clock: **84.41 s** (stage clocks: ingest 0.00s, enrich 15.55s, verify 7.66s, group 46.06s, rank 0.01s, memo 14.80s, export 0.10s). Summed request durations: 83.94 s (not a wall-clock figure).
 - Throughput: 1.18 input rows/s end-to-end. API cost per 1,000 input rows: **$0.0444**; per completed record: **$0.000044**.
+- Result-cache hits: **0 of 100** distinct texts were served from saved results (100 were sent to the enrichment model).
 - New enrichment calls: **3**; downstream model calls: 16. Calls with missing usage: 0.
 
 ### Warm run (saved result cache, unchanged settings)
@@ -45,6 +46,7 @@ Generated offline by `python cost/calculator.py` from saved measurements (no API
 
 - End-to-end wall-clock: **0.38 s** (stage clocks: ingest 0.00s, enrich 0.00s, verify 0.00s, group 0.00s, rank 0.00s, memo 0.00s, export 0.01s). Summed request durations: 0.00 s (not a wall-clock figure).
 - Throughput: 264.55 input rows/s end-to-end. API cost per 1,000 input rows: **$0.0000**; per completed record: **$0.0000**.
+- Result-cache hits: **100 of 100** distinct texts were served from saved results (0 were sent to the enrichment model).
 - New enrichment calls: **0**; downstream model calls: 0. Calls with missing usage: 0.
 
 ### Billing items (billed_units x price / per_units)

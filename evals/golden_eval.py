@@ -181,8 +181,11 @@ def main():
           f"- Ambiguous cases (human ticked needs_review): **{stats['human_ambiguous']}**. Missing/quarantined predictions: {stats['missing_or_quarantined']}.",
           f"- Evidence quotes: {pct(result['evidence_quote_exact_substring'])} are exact source substrings (checked in code); "
           f"{pct(result['evidence_quote_overlaps_human_quote'])} overlap the human-chosen quote (heuristic; inspect `golden_cases.jsonl`).",
-          f"- Entities named by code but absent from the human list: {stats['entity_additions']} (each is a literal term in the text; see cases).",
+          f"- Entities: I left the optional entities column blank for all 50 reviews, so there is no human list to compare against. "
+          f"Code extracted {stats['entity_additions']} entity mentions; each is a lexicon term literally present in the text, so none is an unsupported addition (listed per case in `golden_cases.jsonl`).",
           f"- needs_review as a prediction: {json.dumps(result['needs_review_as_prediction'])}", "",
+          "## Per-topic counts", "", "| Topic | Human labels | Model labels |", "|---|---|---|",
+          *[f"| {t} | {result['per_topic_counts']['human'].get(t, 0)} | {result['per_topic_counts']['model'].get(t, 0)} |" for t in labels.TOPICS], "",
           "## Topic confusion", "", confusion(topic_pairs, labels.TOPICS), "", "## Intent confusion", "", confusion(intent_pairs, labels.INTENTS), "",
           "## Severity confusion", "", confusion(severity_pairs, list("12345")), "", "## Disagreements", "",
           "| Review ID | Text | Human (topic / intent / severity) | Model (topic.subtopic / intent / severity) | Model flagged |", "|---|---|---|---|---|"]

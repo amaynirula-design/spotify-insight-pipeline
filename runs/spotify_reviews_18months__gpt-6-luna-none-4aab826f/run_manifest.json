@@ -1,0 +1,98 @@
+{
+  "run_id": "spotify_reviews_18months__gpt-6-luna-none-4aab826f",
+  "what": "Final full-corpus run. This manifest ties the source file, code version, prompts, model settings and outputs together.",
+  "source": {
+    "file": "spotify_reviews_18months.csv",
+    "sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6",
+    "rows": 660622
+  },
+  "label_config": "gpt-6-luna@none|enrich_p2|schema-s1|4aab826f",
+  "stage_configs": {
+    "enrich": "gpt-6-luna@none|enrich_p2|schema-s1|4aab826f",
+    "group": "gpt-6-luna@low|group_g1|schema-s1|1fbb6d6a",
+    "memo": "gpt-6-luna@medium|memo_m1|schema-s1|09d5f306",
+    "verify": "gpt-6-luna@low|verify_v1|schema-s1|a240da73"
+  },
+  "provider": "openai",
+  "tier": "standard",
+  "config_file": {
+    "path": "pipeline_config.json",
+    "sha256": "4461dda4a38e7ad159c6d8e8f9cf46887c06b00048d320e383c4b66c93490f02"
+  },
+  "prompts": {
+    "enrich_p1.txt": "b5fa85ad044e830393602f51a49067cf64c2b6d3a0df40c00f41cc7845472fa4",
+    "enrich_p2.txt": "58e94a67ae13d88b9fe262cf4d3ddd959c6383a6e36733944f54ef68907868b9",
+    "group_g1.txt": "1fbb6d6a725ff87143717048c671a001e66d468c6fe47a83183cedfdf9b08c52",
+    "memo_m1.txt": "09d5f306ee091065e889b390a2e34c8b0febaacfe9ca45051cd3df7a6264563c",
+    "verify_v1.txt": "a240da730c185f83381bdc648ffacde931cfe0e72d1ac25776f333611c8ab852"
+  },
+  "invocations": [
+    {
+      "invocation": "20261007T232506-5b29bc",
+      "stages": [
+        "ingest"
+      ]
+    },
+    {
+      "invocation": "20261009T165858-40290d",
+      "stages": [
+        "ingest",
+        "enrich",
+        "export"
+      ]
+    },
+    {
+      "invocation": "20261009T170018-b986cf",
+      "stages": [
+        "ingest",
+        "enrich",
+        "verify",
+        "group",
+        "rank",
+        "memo",
+        "export"
+      ]
+    }
+  ],
+  "earlier_runs_whose_enrichment_calls_are_reused": [
+    "checkpoint_500 (2026-10-07)",
+    "analysis_10000 (2026-10-07)",
+    "golden_50_to_label (2026-10-07, 44 texts; labels column never read)"
+  ],
+  "code_version": {
+    "git_commit": "876b05d",
+    "note": "The repository had no commits while the run executed; 876b05d is the first commit and contains the pipeline/ code exactly as it ran on 2026-10-09. After the run, one rendering change was made in pipeline/memo.py (a code-generated coverage sentence in the memo); memo.md was re-rendered from the saved model draft on 2026-10-11 with no model call. No label, ranking or claim changed."
+  },
+  "counts": {
+    "cache_reuse_rows": 176419,
+    "completed": 660532,
+    "distinct_texts": 484189,
+    "empty_text": 13,
+    "n_rows": 660622,
+    "pending": 0,
+    "quarantined_nonempty": 77
+  },
+  "api_cost_usd_measured": 5.910263,
+  "outputs_sha256": {
+    "grading/run.json": "f5363aa696004ca8b1c54f5e29e4d20694ad02c88094751c79aa421d4ced5894",
+    "grading/ingestion.json": "5512dd793b0bde3bd51f28b20b440108f3c9bab31233819bea5f32ce19482153",
+    "grading/records.jsonl.gz": "d34f3e28b93f87f32aa3f43b6f0b77c025be7bab6568c8d6cea5a6f16e5797b1",
+    "grading/membership.csv": "4943bd0790e351963878151e492699f1f2b9a3ac4da44c5b5b2770df53b51673",
+    "grading/ranking.csv": "5c832067740967d377294840a09fe4df1166050532a932082000efe0846ac1ea",
+    "grading/claims.csv": "11f07790ddbed9dae77bbb76da39596188ec297bee081f513124406f2fcac657",
+    "grading/calls.jsonl.gz": "40779d8f9971c900614e5e03c12084e0c38aa23d10b31010756ab63bf87e501d",
+    "grading/checkpoint_before.json": "2bd59dd3ad4a11a232175010732a9f075b329ea9fa2f12101acffd8d18ac8dfb",
+    "grading/checkpoint_after.json": "a9b9052f1e17788996609fd2b0c9e558b71bb438ce1c3ccdb1403079bbc451d1",
+    "runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/enriched.jsonl.gz": "3d21b7b54a4d50b28e848055cb0dbe741b7a8cafd0e13321798ad52715f6b122",
+    "runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/quarantine.jsonl": "facbafc900452e7ad8bd6f4e2d566226a85d8f6ac9e522e7633066ebb63dd777",
+    "runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/issues.csv": "037edda874793f595d1c4bd90967d4167b60c2dcd0266955bd0691139d57d51e",
+    "runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/aggregates.csv": "f576860bcc128ab48731dae39b8abfdb8b5bd536d5c4958966889e77c3dd2a3d",
+    "runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/facts.csv": "1d7c1c8fbfb2a1d520f58c6faa37b17298dfad4d7b25eb420c4ff22781341781",
+    "runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/verify_predictions.jsonl": "e701810ca03dcca5a4c1ab08e7be61e93c6cab84066e6af843e34b68ecbee60d",
+    "runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/verify_report.json": "73d7f475c29e091c6e733f4263721b1de816f6c1aaa4d63147a8114890c8a644",
+    "runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/memo_draft_raw.md": "f6ed371a2444aa01336ce3f0b5924f9f98c5ee7f5dc2d35769e9b424504083b6",
+    "runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/memo.md": "1b7a4455f18206f2bdc379b44f30d231190b40ce9dacc6ff87fbb650a9c5f39c",
+    "runs/spotify_reviews_18months__gpt-6-luna-none-4aab826f/run_log.jsonl": "0eae766e938a14471d51574afde63012dffa98e522f43c85448d90cd351e15b6"
+  },
+  "manifest_written": "2026-10-11T20:07:48Z"
+}

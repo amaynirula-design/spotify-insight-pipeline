@@ -1,5 +1,5 @@
 {
-  "attempts": 1,
+  "attempts": 0,
   "claims_cited": [
     "C001",
     "C002",
@@ -28,7 +28,7 @@
   ],
   "memo_config": "gpt-6-luna@medium|memo_m1|schema-s1|09d5f306",
   "problems": [],
-  "reused_saved_draft": false,
+  "reused_saved_draft": true,
   "reviews_cited": [
     "f7218ea9-a26a-4184-a839-2b42c37752fc",
     "730160f8-4711-4065-97d0-38a32a87c309",

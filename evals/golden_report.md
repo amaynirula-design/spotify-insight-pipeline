@@ -12,8 +12,21 @@ Enricher configuration: `gpt-6-luna@none|enrich_p2|schema-s1|4aab826f`. Predicti
 - Severity mean absolute error: **0.24**; sentiment mean absolute error: **0.12** (100% within the predeclared ±0.5).
 - Ambiguous cases (human ticked needs_review): **9**. Missing/quarantined predictions: 0.
 - Evidence quotes: 100% are exact source substrings (checked in code); 98% overlap the human-chosen quote (heuristic; inspect `golden_cases.jsonl`).
-- Entities named by code but absent from the human list: 32 (each is a literal term in the text; see cases).
+- Entities: I left the optional entities column blank for all 50 reviews, so there is no human list to compare against. Code extracted 32 entity mentions; each is a lexicon term literally present in the text, so none is an unsupported addition (listed per case in `golden_cases.jsonl`).
 - needs_review as a prediction: {"model_flag_and_human_flag": 5, "model_flag_only": 0, "human_flag_only": 4, "neither": 41, "model_flagged_and_label_wrong": 0, "model_unflagged_and_label_wrong": 16}
+
+## Per-topic counts
+
+| Topic | Human labels | Model labels |
+|---|---|---|
+| access | 1 | 0 |
+| usability | 8 | 9 |
+| playback | 4 | 4 |
+| downloads | 1 | 1 |
+| catalog | 1 | 3 |
+| billing | 1 | 5 |
+| support | 0 | 0 |
+| other | 34 | 28 |
 
 ## Topic confusion
 

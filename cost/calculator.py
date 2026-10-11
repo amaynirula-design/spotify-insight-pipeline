@@ -281,6 +281,9 @@ def build_report(folder, rates, rates_path, a, basis_name, multiplier):
           f"Summed request durations: {sum(x['call_seconds_sum'] for x in m['roles'].values()):.2f} s (not a wall-clock figure).")
         w(f"- Throughput: {meta['rows'] / wall:.2f} input rows/s end-to-end. API cost per 1,000 input rows: **{money(total / meta['rows'] * 1000)}**; "
           f"per completed record: **{money(total / max(completed, 1))}**.")
+        labelled = meta["runs"][run_id].get("enrich_events", {}).get("completed", 0)
+        w(f"- Result-cache hits: **{meta['distinct_texts'] - labelled} of {meta['distinct_texts']}** distinct texts were served from saved results "
+          f"({labelled} were sent to the enrichment model).")
         missing = sum(x["missing_usage_calls"] for x in m["roles"].values())
         w(f"- New enrichment calls: **{m['roles']['enrich']['attempts']}**; downstream model calls: "
           f"{sum(m['roles'][r]['attempts'] for r in ('verify', 'group', 'memo'))}. Calls with missing usage: {missing}"
